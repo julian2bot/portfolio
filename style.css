@@ -94,12 +94,3 @@ h1, h2{
 
 }
 
-
-
-
-
-
-.nav-header.clicked {
-    color: red;
-    animation: revertColor var(--animation-duration) forwards;
-}

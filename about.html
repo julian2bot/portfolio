@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <style>
+        :root{
+            /* --temps-animation1:200ms; */
+            --temps-animation2:200ms;
+            --temps-animation1:1s;
+            --color-animation1:aqua;
+        }
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            height: 100vh;         
+            margin: 0;
+            overflow: hidden;
+        }
+        div{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color:var(--color-animation1) ;
+            animation: lancement var(--temps-animation1) forwards, disparition 1s var(--temps-animation1) forwards;
+	        animation-timing-function: cubic-bezier(1, -0.01, 0.34, 1);
+        }
+        @keyframes lancement {
+            from{
+                transform: translateX(100vw);
+            }
+            to{
+                transform: translateX(0) translateY(0);
+            }
+
+        }
+        @keyframes disparition {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 0;
+            }
+        }
+        
+       
+        .line {
+            width: 10px;
+            height: 2px; 
+            background-color:var(--color-animation1) ;
+            /* margin-top: 50px;  */
+            transform-origin: center; 
+            /* opacity: 0; */
+            animation: increaseScale 2s var(--temps-animation1) forwards;
+        }
+
+        @keyframes increaseScale {
+            from {
+                /* opacity: 1; */
+                transform: scaleX(0);
+            }
+            to {
+                transform: scaleX(100); /* S'étire jusqu'à 1, c'est-à-dire pleine largeur */
+
+                /* transform: scaleX(25); */
+                /* transform: scaleX(-25); */
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="pointer"></div>
+    <div class="line"></div>
+
+
+</body>
+</html>

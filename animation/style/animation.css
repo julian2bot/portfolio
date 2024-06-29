@@ -1,0 +1,194 @@
+:root{
+    /* default time */
+
+    /* --temps-animation2:2s;
+    --temps-animation1:1s;
+    --disparition-animation:50ms;
+    --temps-animation3:1s;
+    --color-animation1:white;
+    --temps-animation4:1s;
+    --temps-animation5:1s; */
+    
+    /* best time ? */
+    
+    /* sous page */
+    --temps-animation1:.4s;
+    --temps-animation2:.6s;
+    --disparition-animation:50ms;
+    --temps-animation3:1s;
+    --color-animation1:white;
+    --temps-animation4:1s;
+    --temps-animation5:1.2s;
+    
+    /* index */
+    /* --temps-animation6:.6s; */
+    --temps-animation6:1s;
+
+    /* autres : */
+
+    --animation-duration:1s;
+}
+
+
+/* SOUS PAGE */
+
+
+.up{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    position: fixed; 
+    z-index: 0; 
+    justify-content: center;
+    align-items: center;   
+    overflow: hidden;
+    animation: disparition-all var(--temps-animation4) calc( var(--temps-animation2) + var(--temps-animation1) + var(--temps-animation3)) forwards;
+}
+
+.pointer{
+    z-index: 4;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:var(--color-animation1) ;
+    animation: lancement var(--temps-animation1) forwards, disparition  var(--disparition-animation) var(--temps-animation1) forwards;
+    animation-timing-function: cubic-bezier(1, -0.01, 0.34, 1);
+}
+
+@keyframes lancement {
+    from{
+        transform: translateX(-100vw);
+    }
+    to{
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes disparition {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.line {
+    height: 2px; 
+    background-color:var(--color-animation1) ;
+    transform-origin: center; 
+    width: 0;
+    animation: increaseScale var(--temps-animation2) var(--temps-animation1) forwards, ouverture var(--temps-animation3) calc( var(--temps-animation2) + var(--temps-animation1) - 200ms) forwards, disparition-all var(--temps-animation4) calc( var(--temps-animation2) + var(--temps-animation1) + var(--temps-animation3)) forwards;
+}
+
+
+@keyframes increaseScale {
+    from {
+        width: 0;
+    }
+    to {
+        width: 115vw; 
+    }
+}
+
+@keyframes ouverture {
+    from {
+        background-color: var(--color-animation1);
+        opacity: 0;
+        width: 115vw; 
+        height: 2px;
+    }
+    to {
+        opacity: 1;
+        height: 100vh;
+        border-radius: 10px 10px;
+    }
+}
+
+@keyframes disparition-all {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.body {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: black;
+    z-index:3;
+    display: flex;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+/* PAGE INDEX */
+.animation{
+    width: 100vw;
+    height: 100vh;
+    position: fixed; 
+    z-index:-1; 
+}
+
+.animation.clicked{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    position: fixed; 
+    z-index: 5; 
+    justify-content: center;
+    align-items: center;   
+    overflow: hidden;
+}
+.pageAcceuil{
+    z-index: 1;
+}
+.circle.clicked{
+    z-index: 6;
+    width: 10000px;
+    height: 10000px;
+    border-radius: 50%;
+    background-color:var(--color-animation1);
+    animation: retreciCircle var(--temps-animation6) 20ms forwards;
+}
+@keyframes retreciCircle {
+    from {
+        width: 10000px;
+        height: 10000px;
+        transform: translateX(0) translateY(0);
+
+    }
+    50%{
+        width: 10px;
+        height: 10px;
+        transform: translateX(0) translateY(0);
+
+    }
+    to {
+        width: 10px;
+        height: 10px;
+        transform: translateX(100vw);
+    }
+}
+
+

@@ -13,10 +13,10 @@
 
 header{
 
-	display: flex; /* Assure que le header s'affiche en tant que flexbox */
-	justify-content: center; /* Espace les éléments du header horizontalement */
-	/* position: fixed; Fixe le header en haut de la page */
-	z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
+	display: flex; 
+	justify-content: center;
+
+	z-index: 1000;
 
 	background-image:linear-gradient(#a9a9a999, #a9a9a933);
 	height: 70px;

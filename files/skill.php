@@ -19,7 +19,7 @@
     <div class="body">
         <section>
             <?php include __DIR__ . '/../affichage/header.php'; ?>
-            <h1>Competence</h1>
+            <h1>Compétences</h1>
             <script src="../animation/script/main.js"></script>
             <div class="card-container">
                 <div class="card">
@@ -27,6 +27,8 @@
                     <div class="content">
                         <h3>Python</h3>
                         <p>IA Pacman python, gestion de donnée, gestion serveur...  </p>
+                        <progress max="100" value="80"></progress>
+
                     </div>
                 </div>
                 <div class="card">
@@ -34,13 +36,17 @@
                     <div class="content">
                         <h3>Html</h3>
                         <p>Site Internet... </p>
+                        <progress max="100" value="60"></progress>
+
                     </div>
                 </div>
                 <div class="card">
                     <img src="../asset/images/base-de-donnees.png" alt="arduino">
                     <div class="content">
-                        <h3>base de donnees</h3>
+                        <h3>Base de donnees</h3>
                         <p>Gestion de base de donnée, communication avec base de donnée...</p>
+                        <progress max="100" value="55"></progress>
+
                     </div>
                 </div>
                 <div class="card">
@@ -48,6 +54,17 @@
                     <div class="content">
                         <h3>Css</h3>
                         <p>styliser des pages, animations page...</p>
+                        <progress max="100" value="70"></progress>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../asset/images/Css.png" alt="arduino">
+                    <div class="content">
+                        <h3>PHP</h3>
+                        <p>Gestion serveur client, simplifier des pages...</p>
+                        <progress max="100" value="30"></progress>
+
                     </div>
                 </div>
                 <div class="card">
@@ -55,6 +72,8 @@
                     <div class="content">
                         <h3>JavaScript</h3>
                         <p>Gestion client sur site internet, Bot discord.Js, jeu video, nique JS </p>
+                        <progress max="100" value="10"></progress>
+
                     </div>
                 </div>
                 <div class="card">
@@ -62,13 +81,17 @@
                     <div class="content">
                         <h3>Arduino</h3>
                         <p>Création feux circulation, robot reveil, gestion heure, gestion materiel & logiciel</p>
+                        <progress max="100" value="75"></progress>
+
                     </div>
                 </div>
                 <div class="card">
                     <img src="../asset/images/Java.png" alt="arduino">
                     <div class="content">
                         <h3>Java</h3>
-                        <p>Implementation back & front end d'un logiciel</p>
+                        <p>Implémentation back & front end d'un logiciel</p>
+                        <progress max="100" value="60"></progress>
+
                     </div>
                 </div>
                 <div class="card">
@@ -76,6 +99,26 @@
                     <div class="content">
                         <h3>SolidWorks / 3D</h3>
                         <p>Modelisation & impression piece technique et figurine</p>
+                        <progress max="100" value="60"></progress>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../asset/images/SolidWorks.png" alt="arduino">
+                    <div class="content">
+                        <h3>Modélisme</h3>
+                        <p>Voiture RC & Drone Fpv à réparer </p>
+                        <progress max="100" value="90"></progress>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../asset/images/SolidWorks.png" alt="arduino">
+                    <div class="content">
+                        <h3>Conception schéma electrique</h3>
+                        <p>creation de schéma electrique + realisation schéma electrique</p>
+                        <progress max="100" value="80"></progress>
+
                     </div>
                 </div>
             </div>

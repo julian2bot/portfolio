@@ -52,10 +52,14 @@ ul li a, p{
 ul li a:hover{
 
 	text-decoration: underline black;
+    color: inherit;
 
 }
 
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 .pageAcceuil{
 
@@ -115,6 +119,7 @@ footer{
 
 .card-container{
 	margin-top: 3vh;
+	margin-bottom: 3vh;
 	display: flex;
 	gap: 20px;
 	flex-wrap: wrap;
@@ -130,8 +135,6 @@ footer{
 	padding: 10px;
 	/* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
 	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-
-
 }
 .card:hover{
 	transition: 200ms;
@@ -142,3 +145,6 @@ footer{
 	height: 150px;
 }
 
+div p{
+	margin: 0.3em;
+}

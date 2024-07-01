@@ -134,8 +134,12 @@ section{
 
 
 
+/* LIEN <A> */
 
-
+a:hover{
+    color: grey;
+    transition: 200ms;
+}
 
 
 

@@ -26,7 +26,7 @@
                 <p>|</p>
             </li>
             <li>
-                <a href="#contact_us" class="nav-header">Contact</a>
+                <a href="../files/contact" class="nav-header">Contact</a>
             </li>
         </ul>
     </nav>

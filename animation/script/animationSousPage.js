@@ -27,10 +27,14 @@ document.querySelector('.up').addEventListener('animationend', function(event) {
     const DivElem = document.createElement('div');
     DivElem.classList.add('div');
     DivElem.innerHTML = '<a href="../"> <img class="headerMoi" src="../asset/images/moi.png" alt="image dessin de moi" > </a>';
+    // const Style = document.createElement('div');
+    
+    // Style.innerHTML = '<style>body{overflow:scroll;}</style>';
 
 
     if (event.animationName === 'disparition-all') {
         document.getElementById('main-header').appendChild(DivElem);
+        // document.getElementById('main-header').appendChild(Style);
     }
 });
 

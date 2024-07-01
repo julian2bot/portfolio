@@ -20,7 +20,7 @@
                 <p>|</p>
             </li>
             <li>
-                <a href="#project" class="nav-header">Projets</a>
+                <a href="../files/projects" class="nav-header">Projets</a>
             </li>
             <li>
                 <p>|</p>

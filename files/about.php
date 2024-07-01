@@ -21,7 +21,17 @@
             <h1>Mon site hahhahahahhaha</h1>
             <p>nsfnfkdsfk</p>
             <a href="../">retour</a>
-            <script src="../animation\script\main.js"></script>
+            <script src="../animation/script/main.js"></script>
+
+            <div class="card-container">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                
+            </div>
+
+
         </section>
     </div>
     <script src="../animation/script/animationSousPage.js"></script>

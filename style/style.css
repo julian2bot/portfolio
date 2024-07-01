@@ -12,7 +12,6 @@
 }
 
 header{
-
 	display: flex; 
 	justify-content: center;
 
@@ -20,7 +19,7 @@ header{
 
 	background-image:linear-gradient(#a9a9a999, #a9a9a933);
 	height: 70px;
-    width: 100%;
+    width: 100vw;
     top: 0px;
 	box-shadow: 0 .5em 10px 0px rgba(135, 130, 130, 0.4);
 	
@@ -95,14 +94,51 @@ ul li a:hover{
   
 
 h1{
-
 	font-size: 40px;
 
 }
 
 h1, h2{
+	margin-top: 3vh;
 
 	text-align: center;
 
+}
+
+/* footer */
+footer{
+	background-color: rgb(143, 140, 140);
+}
+
+
+/* SOUS PAGE : SKILL */
+
+.card-container{
+	margin-top: 3vh;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	align-content:center;
+	justify-content: space-evenly;
+	/* flex-direction: column; */
+}
+
+.card{
+	/* background-image: linear-gradient(#a9a9a999, #a9a9a933); */
+	border-radius: 10px;
+	flex-basis: 20%;
+	padding: 10px;
+	/* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+
+}
+.card:hover{
+	transition: 200ms;
+	scale: 1.04;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.card img{	
+	height: 150px;
 }
 

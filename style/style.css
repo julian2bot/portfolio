@@ -154,7 +154,7 @@ footer{
 .card img{	
 	height: 150px;
 	margin-top: 10px;
-	object-fit: cover; 
+	object-fit: contain; 
 }
 
 div h3{
@@ -164,4 +164,24 @@ div h3{
 div p{
 	margin: 0.3em;
 	margin-bottom: 1em;
+}
+
+
+@media only screen and (max-width: 768px) { 
+
+	.card{	
+		flex-basis: 40%;
+	}
+}
+@media only screen and (max-width: 569px) { 
+
+	.card{	
+		flex-basis: 30%;
+	}
+}
+@media only screen and (max-width: 569px) { 
+
+	.card{	
+		flex-basis: 90%;
+	}
 }

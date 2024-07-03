@@ -3,6 +3,10 @@
 	--animation-duration:1s;
 }
 
+*{
+	font-family: roboto sbal;
+}
+
 .headerMoi {
 	height: 4rem;
 	margin-top: 0;
@@ -135,6 +139,13 @@ footer{
 	padding: 10px;
 	/* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
 	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+	/* transform : scale(1);  */
+	 /* A VOIR POURQUOI CA REAGI COMME CA */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center; /* Centrer le contenu horizontalement */
+   
 }
 .card:hover{
 	transition: 200ms;
@@ -147,4 +158,5 @@ footer{
 
 div p{
 	margin: 0.3em;
+	margin-bottom: 1em;
 }

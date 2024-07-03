@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../asset/images/Css.png" alt="arduino">
+                    <img src="../asset/images/php.png" alt="arduino">
                     <div class="content">
                         <h3>PHP</h3>
                         <p>Gestion serveur client, simplifier des pages...</p>
@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../asset/images/SolidWorks.png" alt="arduino">
+                    <img src="../asset/images/circuit-electrique.png" alt="arduino">
                     <div class="content">
                         <h3>Conception schéma electrique</h3>
                         <p>creation de schéma electrique + realisation schéma electrique</p>

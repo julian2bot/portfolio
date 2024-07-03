@@ -32,7 +32,7 @@ document.querySelector('.up').addEventListener('animationend', function(event) {
     // Style.innerHTML = '<style>body{overflow:scroll;}</style>';
 
 
-    if (event.animationName === 'disparition-all') {
+    if (event.animationName === 'ouverture') {
         document.getElementById('main-header').appendChild(DivElem);
         // document.getElementById('main-header').appendChild(Style);
     }

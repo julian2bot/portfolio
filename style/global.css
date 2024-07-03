@@ -70,6 +70,14 @@ progress {
   border-radius: 5px;
   border: 1px solid #5a5959;
   background-color: #f3f3f3;
+	/* 
+  position: absolute; 
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
+  */
+
+  justify-content: center;
 }
 progress::-webkit-progress-value {
   background-color: #2bdee4bb;

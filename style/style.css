@@ -13,12 +13,26 @@
 	margin-left: 20px;
     left: 0;
 	position: absolute;
+
+	animation-duration: 2s;
+	animation-name: apparition;
+	animation-fill-mode: forwards; 
+	/* animation-timing-function: cubic-bezier(1, 0.33, 0.02, -0.04); */
+	
 }
+@keyframes apparition {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+  }
 
 header{
 	display: flex; 
 	justify-content: center;
-
+	/* flex-direction: column-reverse; */
 	z-index: 1000;
 
 	background-image:linear-gradient(#a9a9a999, #a9a9a933);
@@ -113,13 +127,91 @@ h1, h2{
 
 }
 
-/* footer */
-footer{
-	background-color: rgb(143, 140, 140);
+@media only screen and (max-width: 800px) { 
+
+	header{
+		height: auto;	
+		flex-direction: column;
+	}
+	/* <li>
+		<p>|</p>
+	</li> */
+	li > p{
+		/* visibility: hidden; */
+		display: none;
+	}
+	li{
+		display: block;
+	}
 }
 
 
-/* SOUS PAGE : SKILL */
+/* footer */
+
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+footer {
+    background-color: #5a5959bb;
+
+    /* background-color: #333; */
+	/* background-image: linear-gradient(#f5f5f5, #333333); */
+	/* background: radial-gradient(at top, #f5f5f5, #333333); */
+	
+	color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer div:nth-child(2){
+	margin-top: 5%;
+}
+
+
+/* SOUS PAGE : SKILL & PROJECT*/
+
 
 .card-container{
 	margin-top: 3vh;
@@ -166,6 +258,7 @@ div p{
 	margin-bottom: 1em;
 }
 
+/* SOUS PAGE MEDIA QUERY : SKILL & PROJECT*/
 
 @media only screen and (max-width: 768px) { 
 
@@ -184,4 +277,76 @@ div p{
 	.card{	
 		flex-basis: 90%;
 	}
+}
+
+
+
+/* SOUS PAGE : ABOUT ME */
+#aboutMe {    
+	display: flex;
+	flex-direction: row;
+    /* justify-content: space-evenly; */
+    /* padding: 0 10px; */
+    flex-wrap: wrap;
+    /* align-content: center; */
+    /* align-items: center; */
+}
+
+#aboutMe > img {
+    /* background-color: red; */
+    width: 20vw;
+	margin-right: 5vw;
+	margin-bottom: 5vw;
+}
+#aboutMe  h2 {
+	text-align:left;
+	margin-left: 1em;
+}
+
+section {
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.AboutMe {
+    /* max-width: 50%; */
+	flex-basis: 50%;
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+.container-info{
+	display:flex;
+	gap: 10px;
+	flex-direction: row;
+	margin: auto;
+}
+
+.info-item{
+	gap: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+@media only screen and (max-width: 768px) { 
+
+	.AboutMe{	
+		flex-basis: 90%;
+	}
+	
+	#aboutMe > img {
+		width: 20vw;
+		margin: auto;
+		margin-bottom: 5vw;
+
+		/* margin-left: calc((100vw - 20vw + 2%) / 2);
+		margin-right: 2%; */
+	}
+
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>portfolio Julian Marques</title>
+        <title>Julian Marques - PortFolio</title> 
 
 		<link rel="stylesheet" href="./style/global.css">
         <link rel="stylesheet" href="./style/style.css">	

@@ -19,7 +19,7 @@
             <p>PORTFOLIO SITE WEB © 2024</p>
         </div>
         <div class="contact-info">
-            <p>Téléphone : <a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+            <p>Téléphone : <a href="tel:+33695412699">+33 6 95 41 26 99</a></p>
             <p>Email : <a href="mailto:marquesjulian26@gmail.com">marquesjulian26@gmail.com</a></p>
         </div>
     </div>

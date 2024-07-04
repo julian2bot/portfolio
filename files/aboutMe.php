@@ -50,12 +50,12 @@
                             </div>
                             <div class="info-item">
 
-                                <h3>ECOLE</h3>
+                                <h3>ÉCOLE</h3>
                                 <p>IUT ORLEANS</p>
                             </div>
                             <div class="info-item">
 
-                                <h3>ETUDE</h3>
+                                <h3>ÉTUDE</h3>
                                 <p>BUT INFO</p>
                             </div>
                             <div class="info-item">

@@ -33,7 +33,10 @@ document.querySelector('.up').addEventListener('animationend', function(event) {
 
 
     if (event.animationName === 'ouverture') {
-        document.getElementById('main-header').appendChild(DivElem);
+        // document.getElementById('main-header').appendChild(DivElem);
+        const mainHeader = document.getElementById('main-header');
+        const nav = mainHeader.querySelector('nav');
+        mainHeader.insertBefore(DivElem, nav);
         // document.getElementById('main-header').appendChild(Style);
     }
 });

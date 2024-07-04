@@ -8,7 +8,7 @@
     <nav>
         <ul>
             <li>
-                <a href="../files/about" class="nav-header"> À propos de moi</a>
+                <a href="../files/aboutMe" class="nav-header"> À propos de moi</a>
             </li> 
             <li>
                 <p>|</p>

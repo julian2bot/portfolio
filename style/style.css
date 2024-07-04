@@ -143,6 +143,10 @@ h1, h2{
 	li{
 		display: block;
 	}
+	/* nav{
+		margin: 1em  1em  0  0 ;
+		text-align: right;
+	} */
 }
 
 

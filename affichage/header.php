@@ -14,7 +14,7 @@
                 <p>|</p>
             </li>
             <li>
-                <a href="../files/skill" class="nav-header">Compétences</a>
+                <a href="../files/skills" class="nav-header">Compétences</a>
             </li>
             <li>
                 <p>|</p>

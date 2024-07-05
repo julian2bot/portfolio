@@ -16,7 +16,17 @@
             include __DIR__ . '/../affichage/animation.php';
             include __DIR__ . '/../affichage/animationSousPage.php';
         ?>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+        <div id="pdf-viewer">
+            <img src="../asset/images/close.png" alt="image croix" class="close">
+            <canvas id="pdf-render"></canvas>
+            <a href="../asset/CV_Marques_Julian.pdf" download>
+                <img src="../asset/images/download.png" alt="logo telechargement" class="downloadImg">
+            </a>
+        </div>  
+
+        <script src="../animation/script/affichagePDF.js"></script>
+
         <script src="../animation/script/animationSousPage.js"></script>
         
         <div class="body" >
@@ -60,13 +70,15 @@
                             </div>
                             <div class="info-item">
                                 <h3>CV</h3>
-                                <a href="#">
-                                    <img src="../asset/images/cv.png" alt="logo cv?" style="width:2em;">
-                                </a>
+                                <a href="#cv" class="cv" >
+                                    <img src="../asset/images/cv.png" alt="logo cv?">
+                                </a>    
                             </div>
 
                         </div>
                     </section>
+                    <script src="../animation/script/main.js"></script>
+
                     
                     <img src="../asset/images/julian_fpv_.webp" alt="moi image">
                     <!-- <img src="../asset/images/JsJeuPerso.png" alt="moi image"> -->

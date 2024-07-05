@@ -302,7 +302,7 @@ div p{
 	margin-right: 5vw;
 	margin-bottom: 5vw;
 }
-#aboutMe  h2 {
+#aboutMe h2 {
 	text-align:left;
 	margin-left: 1em;
 }
@@ -335,7 +335,9 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+}
+.cv > img{
+	width:2em;
 }
 
 @media only screen and (max-width: 768px) { 
@@ -353,4 +355,46 @@ section {
 		margin-right: 2%; */
 	}
 
+}
+
+
+/* PDF VIEWER */
+
+#pdf-viewer{
+	display:none;
+	background-color:white;
+	width:50vw;
+	height:90vh;
+	z-index:10;
+	position: fixed;
+	margin-left: calc((100vw - 50vw) / 2);
+	margin-top: calc((100vh - 90vh) / 2);
+	overflow: scroll;
+	flex-direction: column; 
+    align-items: end;
+	
+	padding:10px;
+	border-radius: 10px;
+	box-shadow: #26394d 0px 20px 30px 0;
+
+}
+#pdf-render{
+	/* background-color:blue; */
+	/* margin-top:20px; */
+	width:100%;
+	margin-bottom: 10px; 
+}
+
+#pdf-viewer img{
+	width: 2em;
+}
+
+#pdf-viewer .close{
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+#pdf-viewer .downloadImg {
+    margin-right: 5px;
+    cursor: pointer;
 }

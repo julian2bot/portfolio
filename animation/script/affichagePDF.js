@@ -13,7 +13,7 @@
      pdf.getPage(1).then(function(page) {
          console.log('Page 1 chargée.');
 
-         const viewport = page.getViewport({ scale: 1.0 });
+         const viewport = page.getViewport({ scale: 3.0 });
          canvas.height = viewport.height;
          canvas.width = viewport.width;
 

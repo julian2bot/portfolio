@@ -49,3 +49,46 @@ document.querySelectorAll('.close').forEach(link => {
 
     });
 });
+
+const textearea= document.getElementById('message');
+const hauteurDiv = document.querySelector('.contact').offsetHeight ;
+console.log("v1 "+hauteurDiv);
+
+// hauteur de la balise form
+const hauteur = document.querySelector('.form').offsetHeight ;
+console.log("v1 "+hauteur);
+
+const hauteurTextArea = textearea.offsetHeight ;
+
+// calcul de la hauteur pour le textearea en fonction des deux precedente
+const hauteurMaxTextarea = hauteurDiv - hauteur;
+console.log("maxxx"+ hauteurMaxTextarea);
+textearea.style.height =  hauteurMaxTextarea + 'px';
+
+
+// valeur pour une condition max
+// let precedenteMaxHeight = document.getElementById('message').offsetHeight;
+
+// function autoResize(textarea) {
+//     textarea.style.height = 'auto';
+//     textarea.style.height = textarea.scrollHeight + 'px';
+    
+//     // hauteur de la div class contact
+//     const hauteurDiv = document.querySelector('.contact').offsetHeight ;
+//     console.log(hauteurDiv);
+
+//     // hauteur de la balise form
+//     const hauteur = document.querySelector('.form').offsetHeight ;
+//     console.log(hauteur);
+
+//     // calcul de la hauteur pour le textearea en fonction des deux precedente
+//     const hauteurMaxTextarea = hauteurDiv - hauteur;
+//     console.log('hauteur max'+hauteurMaxTextarea);
+
+//     if (hauteurMaxTextarea > precedenteMaxHeight) {
+//         precedenteMaxHeight = hauteurMaxTextarea;
+//         textarea.style.maxHeight = hauteurMaxTextarea + 'px';
+//     }
+
+// }
+

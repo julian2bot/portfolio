@@ -398,3 +398,194 @@ section {
     margin-right: 5px;
     cursor: pointer;
 }
+
+
+
+/* CONTACT US */
+.contact{
+	/* background-color: red; */
+	/* background-image: linear-gradient(#a9a9a999, #a9a9a933); */
+	border-radius: 10px;
+	width: 50vw;
+	height: 75vh;
+	padding: 10px;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	/* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+	/* transform : scale(1);  */
+	 /* A VOIR POURQUOI CA REAGI COMME CA */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center; 
+}
+.contact:hover{
+	transition: 200ms;
+	scale: 1.001;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+fieldset{
+	padding: 1em;
+	width: 45vw;
+	/* height: 65vh; */
+
+}
+legend{
+	text-align: left;
+	margin-left:10px ;
+}
+.form-input{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin-top: .5em;
+}
+.form-input > textarea{
+	width: 100%;
+	padding: 3px;
+	border: none;
+	border-bottom: 1px solid #000; 
+	background-color: transparent; 
+	caret-color: black; 
+	outline: none; 
+	min-width: 100%;
+	min-height: auto;
+	resize: none;
+	overflow: hidden; 
+}
+.form-input > input{
+	width: 100%;
+
+	padding: 3px;
+	border: none;
+	border-bottom: 1px solid #000; 
+	background-color: transparent; 
+	caret-color: black; 
+	outline: none; 
+	height: calc(hauteur max);
+	
+}
+
+/* .btn{
+	border:solid red 15px;
+	width: 515px;
+	height: 183px;
+	border-radius: 50%;
+	position: relative;
+}
+
+.btn::after, .btn::before{
+	width: 515px;
+	height: 183px;
+	border:solid red 11px;
+	border-radius: 50%;
+	display: block;
+	content: "";
+	position: absolute;
+	left: -15px;
+	right: -15px;
+} */
+
+.btn{
+	margin-top: 5em;
+	width: 4em;
+
+	padding: 2px;
+	width: 4em;
+	position: absolute;
+	animation: change 100ms linear infinite;
+	border: 2px solid rgb(0, 0, 0) ;
+	border-radius: 50% 50% 68% 32% / 45% 30% 70% 55% ;
+
+}
+
+@keyframes change {
+	0% {
+	  border-radius: 50% 50% 68% 32% / 45% 30% 70% 55%;
+	}
+	33% {
+	  border-radius: 26% 74% 33% 67% / 70% 37% 63% 30%;
+	}
+	66% {
+	  border-radius: 46% 54% 64% 36% / 31% 63% 37% 69%;
+	}
+	100% {
+	  border-radius: 50% 50% 68% 32% / 45% 30% 70% 55%;
+	}
+}
+/* .an{
+	position: relative;
+ } */
+
+
+.btn span{
+	padding: 2px;
+	height: 100%;
+	width: 4em;
+	position: absolute;
+	/* border: 2px solid rgb(81, 81, 81) ;
+	border-radius: 50% 50% 68% 32% / 45% 30% 70% 55% ; */
+
+	animation: change 1s linear infinite;
+	/* animation: animate 1s linear infinite; */
+	left: 0;
+	/* right: 0;
+	top: 0;
+	bottom: 0; */
+}
+
+/* 
+.btn span:nth-child(1){
+	border-radius: 50% 50% 68% 32% / 45% 30% 70% 55% ;
+}
+
+.btn span:nth-child(2){
+	animation-direction: reverse;
+	border-radius: 26% 74% 33% 67% / 70% 37% 63% 30% ;
+}
+
+.btn span:nth-child(3){
+	animation-duration: 2s;
+	border-radius: 46% 54% 64% 36% / 31% 63% 37% 69% ;
+} */
+/* 
+@keyframes animate {
+	0%{
+		transform: rotate(0deg);
+	}
+	0%{
+		transform: rotate(360deg);
+	}
+	
+	
+} */
+
+@media only screen and (max-width: 1024px) { 
+
+	.contact{
+		/* background-color: red; */
+		/* background-image: linear-gradient(#a9a9a999, #a9a9a933); */
+		width: 70vw;
+	}
+	fieldset{
+		padding: 1em;
+		width: 65vw;
+	}
+}
+
+@media only screen and (max-width: 768px) { 
+
+	.contact{
+		/* background-color: red; */
+		/* background-image: linear-gradient(#a9a9a999, #a9a9a933); */
+		width: 90vw;
+	}
+	fieldset{
+		padding: 1em;
+		width: 85vw;
+	}
+}
+

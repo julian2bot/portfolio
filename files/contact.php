@@ -60,7 +60,14 @@
             
             </section>
         </div> 
-        
+        <?php 
+            $entete = "entete du mail a en envoyer";
+            $message = "test de php + envoi mail";
+            $err = mail('marquesjulian26@gmail.com', 'Envoi depuis page Contact', $message, $entete);
+            // $err = 'message envoyer';
+            if($err)
+            echo '<p>Votre message a bien été envoyé.</p>';
+        ?>
         <?php include __DIR__ . '/../affichage/footer.php';?>
 
     </body>

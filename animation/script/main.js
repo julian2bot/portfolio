@@ -58,10 +58,17 @@ console.log("v1 "+hauteurDiv);
 const hauteur = document.querySelector('.form').offsetHeight ;
 console.log("v1 "+hauteur);
 
+// hauteur de la balise form
+const hauteurbtn = document.querySelector('.btn').offsetHeight ;
+console.log("v1.1 "+hauteurbtn);
+
 const hauteurTextArea = textearea.offsetHeight ;
 
+// pour avoir la valeur de 1em en px 
+const emPx = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
 // calcul de la hauteur pour le textearea en fonction des deux precedente
-const hauteurMaxTextarea = hauteurDiv - hauteur;
+const hauteurMaxTextarea = hauteurDiv - hauteur + hauteurbtn - emPx;
 console.log("maxxx"+ hauteurMaxTextarea);
 textearea.style.height =  hauteurMaxTextarea + 'px';
 

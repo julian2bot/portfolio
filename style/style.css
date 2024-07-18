@@ -489,52 +489,83 @@ legend{
 	right: -15px;
 } */
 
-.btn{
-	margin-top: 5em;
-	width: 4em;
-
-	padding: 2px;
-	width: 4em;
-	position: absolute;
-	animation: change 100ms linear infinite;
-	border: 2px solid rgb(0, 0, 0) ;
+.btn {
+    width: 10vw;
+    height: 10vh;
+    /* background-color: red; */
+    position: relative;
 	border-radius: 50% 50% 68% 32% / 45% 30% 70% 55% ;
 
 }
 
-@keyframes change {
-	0% {
-	  border-radius: 50% 50% 68% 32% / 45% 30% 70% 55%;
-	}
-	33% {
-	  border-radius: 26% 74% 33% 67% / 70% 37% 63% 30%;
-	}
-	66% {
-	  border-radius: 46% 54% 64% 36% / 31% 63% 37% 69%;
-	}
-	100% {
-	  border-radius: 50% 50% 68% 32% / 45% 30% 70% 55%;
-	}
+.btn::before,
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+	border-radius: 64% 36% 66% 34% / 49% 67% 33% 51% ;
+
+    box-sizing: border-box;
+    pointer-events: none;
 }
-/* .an{
-	position: relative;
- } */
+.btn::before{
+	border-radius: 76% 24% 69% 31% / 30% 45% 55% 70%  ;
+
+}
+
+.btn:hover{    
+	animation: shake 0.1s infinite alternate;
+
+}
+
+.btn::before:hover,
+.btn::after:hover{
+	animation: shake 0.1s infinite alternate;
+}
 
 
-.btn span{
-	padding: 2px;
-	height: 100%;
-	width: 4em;
-	position: absolute;
-	/* border: 2px solid rgb(81, 81, 81) ;
-	border-radius: 50% 50% 68% 32% / 45% 30% 70% 55% ; */
+.btn::after{
+    animation-delay: 0.05s;
+}
 
-	animation: change 1s linear infinite;
-	/* animation: animate 1s linear infinite; */
-	left: 0;
-	/* right: 0;
-	top: 0;
-	bottom: 0; */
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
 
 /* 

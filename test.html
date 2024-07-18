@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crayon Effect</title>
+    <style>
+:root{
+
+    --animation-durationBTN:.1s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    
+}
+
+.btn {
+    width: 10vw;
+    height: 10vh;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+
+    position: relative;
+    /* border-radius: 50% 50% 68% 32% / 45% 30% 70% 55%; */
+    /* animation: basique var(--animation-durationBTN) infinite; */
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    pointer-events: none;
+
+    /* opacity: 0; */
+    animation: basique var(--animation-durationBTN) infinite;
+}
+
+.btn::before {
+    border-radius: 76% 24% 69% 31% / 30% 45% 55% 70%;
+    animation-delay: calc(var(--animation-durationBTN) * 2 - 20);
+}
+
+.btn::after {
+    border-radius: 64% 36% 66% 34% / 49% 67% 33% 51%;
+    animation-delay: calc(var(--animation-durationBTN) / 2 + 20);
+}
+
+
+@keyframes basique{
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes after{
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+
+@keyframes before{
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+@keyframes borderShowHide {
+    0%, 66.67%, 100% {
+        opacity: 0;
+    }
+    33.33%, 66.67% {
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+/* 
+.btn:hover {
+    animation: shake 0.1s infinite alternate;
+}
+
+.btn:hover::before,
+.btn:hover::after {
+    animation: shake 0.1s infinite alternate;
+} */
+
+    </style>
+</head>
+<body>
+    <div class="btn">salut</div>
+</body>
+</html>

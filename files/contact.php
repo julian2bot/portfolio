@@ -34,31 +34,68 @@ function sendmail($nom, $email, $tel,$sujet, $message){
         // Contenu
         $mail->isHTML(true);                       
         $mail->Subject = $sujet;
-        $mail->Body = ''.$message.'\n\n'.$tel.'\n\n'.$email;
-        $mail->AltBody = 'JSP C QUAW';
+        $mail->Body = '
+        <html>
+        <head>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                }
+                .container {
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    margin: 10px;
+                }
+                .header {
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                .content {
+                    margin-bottom: 10px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">Vous avez reçu un nouveau message de contact :</div>
+                <div class="content">
+                    <strong>Nom:</strong> ' . $nom . '<br>
+                    <strong>Email:</strong> ' . $email . '<br>
+                    <strong>Téléphone:</strong> ' . $tel . '<br><br>
+                    <strong>Message:</strong><br>' . nl2br($message) . '
+                </div>
+            </div>
+        </body>
+        </html>';        $mail->AltBody = 'JSP C QUAW';
 
         $mail->send();
-        $erreur = "Votre message a bien été envoyé!";
+        $erreur = "Votre message a bien été envoyé!1";
     } catch (Exception $e) {
         // echo "Le message n'a pas pu être envoyé. Erreur Mailer: {$mail->ErrorInfo}";
         $erreur = "Le message n'a pas pu être envoyé.";
     }
 }
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     // Récupère et nettoie les données du formulaire
-//     $nom = htmlspecialchars($_POST['Name']);
-//     $email = htmlspecialchars($_POST['email']);
-//     $tel = htmlspecialchars($_POST['tel']);
-//     $sujet = htmlspecialchars($_POST['sujet']);
-//     $message = htmlspecialchars($_POST['message']);
-//     if(!empty($_POST['Name']) AND !empty($_POST['email']) AND !empty($_POST['email']) AND !empty($_POST['message']) AND !empty($_POST['sujet']))
-// 	{
-//         sendmail($nom, $email, $tel, $sujet, $message);
 
-//     }else{
-// 		$erreur= "Tous les champs doivent être complétés!";
-//     }
-// }
+echo '<pre>';
+print_r ($_SERVER); 
+echo '</pre>';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupère et nettoie les données du formulaire
+    $nom = htmlspecialchars($_POST['Name']);
+    $email = htmlspecialchars($_POST['email']);
+    $tel = htmlspecialchars($_POST['tel']);
+    $sujet = htmlspecialchars($_POST['sujet']);
+    $message = htmlspecialchars($_POST['message']);
+    if(!empty($_POST['Name']) AND !empty($_POST['email']) AND !empty($_POST['email']) AND !empty($_POST['message']) AND !empty($_POST['sujet']))
+	{
+        sendmail($nom, $email, $tel, $sujet, $message);
+    $erreur = "Votre message a bien été envoyé!2";
+
+    }else{
+		$erreur= "Tous les champs doivent être complétés!";
+    }
+}
 
 
 ?>

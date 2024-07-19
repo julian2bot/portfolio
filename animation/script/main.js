@@ -55,8 +55,8 @@ const hauteurDiv = document.querySelector('.contact').offsetHeight ;
 console.log("v1 "+hauteurDiv);
 
 // hauteur de la balise form
-const hauteur = document.querySelector('.form').offsetHeight ;
-console.log("v1 "+hauteur);
+const hauteurFORM = document.querySelector('.form').offsetHeight ;
+console.log("v1 "+hauteurFORM);
 
 // hauteur de la balise form
 const hauteurbtn = document.querySelector('.btn').offsetHeight ;
@@ -68,7 +68,7 @@ const hauteurTextArea = textearea.offsetHeight ;
 const emPx = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
 // calcul de la hauteur pour le textearea en fonction des deux precedente
-const hauteurMaxTextarea = hauteurDiv - hauteur + hauteurbtn - emPx;
+const hauteurMaxTextarea = hauteurDiv - hauteurFORM + hauteurbtn - emPx - hauteurTextArea;
 console.log("maxxx"+ hauteurMaxTextarea);
 textearea.style.height =  hauteurMaxTextarea + 'px';
 

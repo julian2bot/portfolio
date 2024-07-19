@@ -1,3 +1,67 @@
+
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Inclure les fichiers de PHPMailer
+require __DIR__ . '/../PHPMailer/src/Exception.php';
+require __DIR__ . '/../PHPMailer/src/PHPMailer.php';
+require __DIR__ . '/../PHPMailer/src/SMTP.php';
+
+function sendmail($nom, $email, $tel,$sujet, $message){
+    $mdp = fopen( __DIR__ . '/pass.csv', 'r');
+    if (!feof($mdp)) {
+        $ligne = fgets($mdp);
+        // echo '' . $ligne . "\n";
+    }
+    fclose($mdp);
+
+    $mail = new PHPMailer(true);
+    try {
+        // Paramètres du serveur
+        $mail->SMTPDebug = 0;                      
+        $mail->isSMTP();                           
+        $mail->Host = 'smtp.gmail.com';   
+        $mail->SMTPAuth = true;                   
+        $mail->Username = 'portfoliojulian26@gmail.com'; 
+        $mail->Password = $ligne;         
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  
+        $mail->Port = 587;                  
+
+        // Destinataires
+        $mail->setFrom('portfoliojulian26@gmail.com', 'Mailer');
+        $mail->addAddress('marquesjulian26@gmail.com');  
+        // Contenu
+        $mail->isHTML(true);                       
+        $mail->Subject = $sujet;
+        $mail->Body = ''.$message.'\n\n'.$tel.'\n\n'.$email;
+        $mail->AltBody = 'JSP C QUAW';
+
+        $mail->send();
+        $erreur = "Votre message a bien été envoyé!";
+    } catch (Exception $e) {
+        // echo "Le message n'a pas pu être envoyé. Erreur Mailer: {$mail->ErrorInfo}";
+        $erreur = "Le message n'a pas pu être envoyé.";
+    }
+}
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     // Récupère et nettoie les données du formulaire
+//     $nom = htmlspecialchars($_POST['Name']);
+//     $email = htmlspecialchars($_POST['email']);
+//     $tel = htmlspecialchars($_POST['tel']);
+//     $sujet = htmlspecialchars($_POST['sujet']);
+//     $message = htmlspecialchars($_POST['message']);
+//     if(!empty($_POST['Name']) AND !empty($_POST['email']) AND !empty($_POST['email']) AND !empty($_POST['message']) AND !empty($_POST['sujet']))
+// 	{
+//         sendmail($nom, $email, $tel, $sujet, $message);
+
+//     }else{
+// 		$erreur= "Tous les champs doivent être complétés!";
+//     }
+// }
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,38 +75,42 @@
         <link rel="stylesheet" href="../animation/style/animation.css">
     </head>
     <body>
-        <!-- <?php
+        <?php
             include __DIR__ . '/../affichage/animation.php';
             include __DIR__ . '/../affichage/animationSousPage.php';
-        ?> -->
+        ?> 
         
         <script src="../animation/script/animationSousPage.js"></script>
         
-        <div class="body">
+        <main>
             <section>
                 <?php include __DIR__ . '/../affichage/header.php'; ?>
                 
 
                 <h1>Contact</h1>            
                 <div class="contact">
-                <form class="form" action="javascript:void(0);">
+                <form method="POST" class="form" action="">
                     <fieldset>
                         <legend>Contact Me</legend>
                         <div class="form-input">
                             <label for="Name">Nom & Prenom *</label>
-                            <input type="text" name="Name" id="Name" placeholder=" " autocomplete="off" class="form-control-material" required />
+                            <input type="text" name="Name" id="Name" placeholder=" " autocomplete="off" class="form-control-material"  />
                         </div>
                         <div class="form-input">
                             <label for="email">Email *</label>
-                            <input type="email" name="email" id="email" placeholder=" " autocomplete="off" class="form-control-material" required />
+                            <input type="email" name="email" id="email" placeholder=" " autocomplete="off" class="form-control-material"  />
                         </div>
                         <div class="form-input">
                             <label for="tel">N° telephone</label>
                             <input type="tel" name="tel" id="tel" placeholder=" " autocomplete="off" class="form-control-material" />
                         </div>
                         <div class="form-input">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" oninput="autoResize(this)"></textarea>
+                            <label for="sujet">Sujet *</label>
+                            <input type="text" name="sujet" id="sujet" placeholder=" " autocomplete="off" class="form-control-material"  />
+                        </div>
+                        <div class="form-input">
+                            <label for="message">Message * </label>
+                            <textarea name="message" id="message"></textarea>
                             <!-- <input type="message" name="message" id="message" placeholder=" " autocomplete="off" class="form-control-material" /> -->
                         </div>
                         <button type="submit" class="btn">
@@ -52,6 +120,13 @@
                             <span></span>
                         </button>
                     </fieldset>
+                    <?php
+
+                        if(isset($erreur))
+                        {
+                            echo '<font color="red">'.$erreur."</font>";
+                        }
+                    ?>
                 </form>
                 <script src="../animation/script/main.js"></script>
                    
@@ -59,15 +134,8 @@
                 </div>  
             
             </section>
-        </div> 
-        <?php 
-            $entete = "entete du mail a en envoyer";
-            $message = "test de php + envoi mail";
-            $err = mail('marquesjulian26@gmail.com', 'Envoi depuis page Contact', $message, $entete);
-            // $err = 'message envoyer';
-            if($err)
-            echo '<p>Votre message a bien été envoyé.</p>';
-        ?>
+        </main> 
+
         <?php include __DIR__ . '/../affichage/footer.php';?>
 
     </body>

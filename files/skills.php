@@ -18,7 +18,7 @@
         
         <script src="../animation/script/animationSousPage.js"></script>
         
-        <div class="body">
+        <main>
             <section>
                 <?php include __DIR__ . '/../affichage/header.php'; ?>
                 
@@ -151,7 +151,7 @@
                 </div>
             
             </section>
-        </div> 
+    </main> 
         
         <?php include __DIR__ . '/../affichage/footer.php';?>
 

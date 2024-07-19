@@ -29,7 +29,7 @@
 
         <script src="../animation/script/animationSousPage.js"></script>
         
-        <div class="body" >
+        <main>
 
             <section>
                 
@@ -85,7 +85,7 @@
                 </div>
                          
             </section>
-        </div> 
+        </main> 
         
         <?php include __DIR__ . '/../affichage/footer.php';?>
 

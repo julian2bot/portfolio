@@ -66,19 +66,20 @@ function sendmail($nom, $email, $tel,$sujet, $message){
                 </div>
             </div>
         </body>
-        </html>';        $mail->AltBody = 'JSP C QUAW';
+        </html>';        
+	$mail->AltBody = "Vous avez reçu un nouveau message de contact:\n\nNom: $nom\nEmail: $email\nTéléphone: $tel\n\nMessage:\n$message";
 
         $mail->send();
-        $erreur = "Votre message a bien été envoyé!1";
+        // $erreur = "Votre message a bien été envoyé!";
     } catch (Exception $e) {
         // echo "Le message n'a pas pu être envoyé. Erreur Mailer: {$mail->ErrorInfo}";
         $erreur = "Le message n'a pas pu être envoyé.";
     }
 }
 
-echo '<pre>';
-print_r ($_SERVER); 
-echo '</pre>';
+// echo '<pre>';
+// print_r ($_SERVER); 
+// echo '</pre>';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupère et nettoie les données du formulaire
@@ -90,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(!empty($_POST['Name']) AND !empty($_POST['email']) AND !empty($_POST['email']) AND !empty($_POST['message']) AND !empty($_POST['sujet']))
 	{
         sendmail($nom, $email, $tel, $sujet, $message);
-    $erreur = "Votre message a bien été envoyé!2";
+    	$erreur = "Votre message a bien été envoyé!";
 
     }else{
 		$erreur= "Tous les champs doivent être complétés!";

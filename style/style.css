@@ -492,12 +492,14 @@ legend{
 .btn {
     width: 10vw;
     height: 10vh;
+	margin-top: .3em;
     /* background-color: red; */
-    position: relative;
-	border-radius: 50% 50% 68% 32% / 45% 30% 70% 55% ;
+    /* position: relative; */
+	/* border-radius: 50% 50% 68% 32% / 45% 30% 70% 55% ; */
+	border-radius: 76% 24% 69% 31% / 30% 45% 55% 70%;
 
 }
-
+/* 
 .btn::before,
 .btn::after {
     content: '';
@@ -530,7 +532,7 @@ legend{
 
 .btn::after{
     animation-delay: 0.05s;
-}
+} */
 
 @keyframes shake {
     0% {

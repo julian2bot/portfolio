@@ -105,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>skills - PortFolio</title>        
+        <title>Contact - PortFolio</title>        
         <link rel="icon" href="../asset/images/moi.png"> 
 
         <link rel="stylesheet" href="../style/global.css">
@@ -113,17 +113,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <link rel="stylesheet" href="../animation/style/animation.css">
     </head>
     <body>
-        <?php
-            include __DIR__ . '/../affichage/animation.php';
-            include __DIR__ . '/../affichage/animationSousPage.php';
-        ?> 
+    <?php
+          include __DIR__ . '/../affichage/lesAnimations.php';
+      ?> 
         
         <script src="../animation/script/animationSousPage.js"></script>
         
         <main>
             <section>
                 <?php include __DIR__ . '/../affichage/header.php'; ?>
-                
+                <?php
+                    // A FAIRE
+                    include __DIR__ . '/../affichage/valAnime.php';
+                    if ($animation === 'Active') {
+                        echo '<script src="../animation/script/animationSousPage.js"></script> ';
+
+                        
+                    } else{
+                        echo '<script src="../animation/script/noAnimationSousPage.js"></script>';
+
+                    }
+                ?>   
 
                 <h1>Contact</h1>            
                 <div class="contact">
@@ -166,7 +176,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         }
                     ?>
                 </form>
-                <script src="../animation/script/main.js"></script>
+                <!-- <script src="../animation/script/main.js"></script> -->
                    
 
                 </div>  

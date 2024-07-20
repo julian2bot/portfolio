@@ -19,7 +19,13 @@
 
         <!-- <a href="#top"><img alt="image retour en haut de page" src="images/top.png"></a> -->
 		<?php
-        include __DIR__ . '/affichage/animation.php';
+            //   $animation = 'Active';
+            // //   $animation = 'Desactive';
+            //   if ($animation === 'Active') {
+            //      include __DIR__ . '/affichage/animation.php';
+            //   }
+              include __DIR__ . '/affichage/animation.php';
+
     	?>
             <section class="pageAcceuil">
             

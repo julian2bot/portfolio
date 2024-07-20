@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -12,6 +11,7 @@
 
     </head>
     <body>
+
     <?php
           include __DIR__ . '/../affichage/lesAnimations.php';
       ?>
@@ -32,7 +32,6 @@
             <section>
                 
                 <?php include __DIR__ . '/../affichage/header.php'; ?>
-                <script src="script.js"></script>
 
                 <h1>À propos de moi</h1>
                 <div id="aboutMe">
@@ -86,6 +85,7 @@
         </main> 
         
         <?php include __DIR__ . '/../affichage/footer.php';?>
+        <script src="script.js"></script>
 
     </body>
 </html>

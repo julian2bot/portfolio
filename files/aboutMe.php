@@ -12,10 +12,9 @@
 
     </head>
     <body>
-        <?php
-            include __DIR__ . '/../affichage/animation.php';
-            include __DIR__ . '/../affichage/animationSousPage.php';
-        ?>
+    <?php
+          include __DIR__ . '/../affichage/lesAnimations.php';
+      ?>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
         <div id="pdf-viewer">
             <img src="../asset/images/close.png" alt="image croix" class="close">
@@ -26,21 +25,32 @@
         </div>  
 
         <script src="../animation/script/affichagePDF.js"></script>
-
-        <script src="../animation/script/animationSousPage.js"></script>
         
-        <main>
+        <main class="body">
 
             <section>
                 
                 <?php include __DIR__ . '/../affichage/header.php'; ?>
-                <script src="../animation/script/main.js"></script>
+                <!-- <script src="../animation/script/main.js"></script> -->
+                <?php
+                    // A FAIRE
+                    include __DIR__ . '/../affichage/valAnime.php';
+                    if ($animation === 'Active') {
+                        echo '<script src="../animation/script/animationSousPage.js"></script> ';
+
+                        
+                    } else{
+                        echo '<script src="../animation/script/noAnimationSousPage.js"></script>';
+
+                    }
+                ?>        
+                <!-- <script src="../animation/script/animationSousPage.js"></script> -->
 
                 <h1>À propos de moi</h1>
                 <div id="aboutMe">
                     <section class="AboutMe">
                         <h2>Présentation</h2>
-                        <p>
+                        <p> 
                             Je suis Julian Marques, en 1ere année de But Informatique à l'IUT d'Orléans. je suis passionné par le développement informatique ainsi que le modélisme avec plusieurs projets a mon actif ! 
                         </p>
                         <p>

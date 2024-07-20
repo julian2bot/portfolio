@@ -5,7 +5,7 @@
         <img class="headerMoi" src="../asset/images/moi.png" alt="image dessin de moi" >
       </a>
     </div> -->
-    <nav>
+    <nav id="nav">
         <ul>
             <li>
                 <a href="../files/aboutMe" class="nav-header"> À propos de moi</a>

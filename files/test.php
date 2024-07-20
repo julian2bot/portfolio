@@ -25,32 +25,20 @@
         </div>  
 
         <script src="../animation/script/affichagePDF.js"></script>
+
         
         <main class="body">
 
             <section>
                 
                 <?php include __DIR__ . '/../affichage/header.php'; ?>
-                <!-- <script src="../animation/script/main.js"></script> -->
-                <?php
-                    // A FAIRE
-                    include __DIR__ . '/../affichage/valAnime.php';
-                    if ($animation === 'Active') {
-                        echo '<script src="../animation/script/animationSousPage.js"></script> ';
-
-                        
-                    } else{
-                        echo '<script src="../animation/script/noAnimationSousPage.js"></script>';
-
-                    }
-                ?>        
-                <!-- <script src="../animation/script/animationSousPage.js"></script> -->
+                <script src="script.js"></script>
 
                 <h1>À propos de moi</h1>
                 <div id="aboutMe">
                     <section class="AboutMe">
                         <h2>Présentation</h2>
-                        <p> 
+                        <p>
                             Je suis Julian Marques, en 1ere année de But Informatique à l'IUT d'Orléans. je suis passionné par le développement informatique ainsi que le modélisme avec plusieurs projets a mon actif ! 
                         </p>
                         <p>

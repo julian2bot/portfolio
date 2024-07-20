@@ -11,18 +11,27 @@
         <link rel="stylesheet" href="../animation/style/animation.css">
     </head>
     <body>
-        <?php
-            include __DIR__ . '/../affichage/animation.php';
-            include __DIR__ . '/../affichage/animationSousPage.php';
-        ?>
-        <script src="../animation/script/animationSousPage.js"></script>
+    <?php
+          include __DIR__ . '/../affichage/lesAnimations.php';
+      ?>
         
         <main>
             <section>
 
                 <?php include __DIR__ . '/../affichage/header.php'; ?>
-                <script src="../animation/script/main.js"></script>
+                <?php
+                    // A FAIRE
+                    include __DIR__ . '/../affichage/valAnime.php';
+                    if ($animation === 'Active') {
+                        echo '<script src="../animation/script/animationSousPage.js"></script> ';
 
+                        
+                    } else{
+                        echo '<script src="../animation/script/noAnimationSousPage.js"></script>';
+
+                    }
+                ?>     
+                
                 <h1>Projets</h1>
                 <div class="card-container">
                     

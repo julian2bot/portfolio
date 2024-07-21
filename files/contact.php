@@ -31,42 +31,46 @@ function sendmail($nom, $email, $tel,$sujet, $message){
         // Destinataires
         $mail->setFrom('portfoliojulian26@gmail.com', 'Mailer');
         $mail->addAddress('marquesjulian26@gmail.com');  
+        
         // Contenu
         $mail->isHTML(true);                       
         $mail->Subject = $sujet;
         $mail->Body = '
-        <html>
-        <head>
-            <style>
-                body {
-                    font-family: Arial, sans-serif;
-                }
-                .container {
-                    border: 1px solid #ccc;
-                    padding: 10px;
-                    margin: 10px;
-                }
-                .header {
-                    font-weight: bold;
-                    margin-bottom: 10px;
-                }
-                .content {
-                    margin-bottom: 10px;
-                }
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <div class="header">Vous avez reçu un nouveau message de contact :</div>
-                <div class="content">
-                    <strong>Nom:</strong> ' . $nom . '<br>
-                    <strong>Email:</strong> ' . $email . '<br>
-                    <strong>Téléphone:</strong> ' . $tel . '<br><br>
-                    <strong>Message:</strong><br>' . nl2br($message) . '
-                </div>
-            </div>
-        </body>
-        </html>';        
+            <html>
+                <head>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                        }
+                        .container {
+                            border: 1px solid #ccc;
+                            padding: 10px;
+                            margin: 10px;
+                        }
+                        .header {
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                        .content {
+                            margin-bottom: 10px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <div class="header">Vous avez reçu un nouveau message de contact :</div>
+                        <div class="content">
+                            <strong>Sujet:</strong> ' . $sujet . '<br>
+                            <strong>Message:</strong><br>' . nl2br($message) . '<br><br>
+                            <strong>Nom:</strong> ' . $nom . '<br>
+                            <strong>Email:</strong> ' . $email . '<br>
+                            <strong>Téléphone:</strong> ' . $tel . '
+
+                        </div>
+                    </div>
+                </body>
+            </html>
+        ';        
 	$mail->AltBody = "Vous avez reçu un nouveau message de contact:\n\nNom: $nom\nEmail: $email\nTéléphone: $tel\n\nMessage:\n$message";
 
         $mail->send();
@@ -97,9 +101,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$erreur= "Tous les champs doivent être complétés!";
     }
 }
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -123,61 +126,59 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <section>
                 <?php include __DIR__ . '/../affichage/header.php'; ?>
                 <?php
-                    // A FAIRE
                     include __DIR__ . '/../affichage/valAnime.php';
                     if ($animation === 'Active') {
                         echo '<script src="../animation/script/animationSousPage.js"></script> ';
 
-                        
                     } else{
                         echo '<script src="../animation/script/noAnimationSousPage.js"></script>';
 
                     }
-                ?>   
+                    echo '<script src="../animation/script/script.js"></script>';
+
+                ?>        
+
 
                 <h1>Contact</h1>            
                 <div class="contact">
-                <form method="POST" class="form" action="">
-                    <fieldset>
-                        <legend>Contact Me</legend>
-                        <div class="form-input">
-                            <label for="Name">Nom & Prenom *</label>
-                            <input type="text" name="Name" id="Name" placeholder=" " autocomplete="off" class="form-control-material"  />
-                        </div>
-                        <div class="form-input">
-                            <label for="email">Email *</label>
-                            <input type="email" name="email" id="email" placeholder=" " autocomplete="off" class="form-control-material"  />
-                        </div>
-                        <div class="form-input">
-                            <label for="tel">N° telephone</label>
-                            <input type="tel" name="tel" id="tel" placeholder=" " autocomplete="off" class="form-control-material" />
-                        </div>
-                        <div class="form-input">
-                            <label for="sujet">Sujet *</label>
-                            <input type="text" name="sujet" id="sujet" placeholder=" " autocomplete="off" class="form-control-material"  />
-                        </div>
-                        <div class="form-input">
-                            <label for="message">Message * </label>
-                            <textarea name="message" id="message"></textarea>
-                            <!-- <input type="message" name="message" id="message" placeholder=" " autocomplete="off" class="form-control-material" /> -->
-                        </div>
-                        <button type="submit" class="btn">
-                            Envoyer
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </fieldset>
-                    <?php
+                    <form method="POST" class="form" action="">
+                        <fieldset>
+                            <legend>Contact Me</legend>
+                            <div class="form-input">
+                                <label for="Name">Nom & Prenom *</label>
+                                <input type="text" name="Name" id="Name" placeholder=" " autocomplete="off" class="form-control-material"  />
+                            </div>
+                            <div class="form-input">
+                                <label for="email">Email *</label>
+                                <input type="email" name="email" id="email" placeholder=" " autocomplete="off" class="form-control-material"  />
+                            </div>
+                            <div class="form-input">
+                                <label for="tel">N° telephone</label>
+                                <input type="tel" name="tel" id="tel" placeholder=" " autocomplete="off" class="form-control-material" />
+                            </div>
+                            <div class="form-input">
+                                <label for="sujet">Sujet *</label>
+                                <input type="text" name="sujet" id="sujet" placeholder=" " autocomplete="off" class="form-control-material"  />
+                            </div>
+                            <div class="form-input">
+                                <label for="message">Message * </label>
+                                <textarea name="message" id="message"></textarea>
+                            </div>
+                            <button type="submit" class="btn">
+                                Envoyer
+                                <!-- <span></span>
+                                <span></span>
+                                <span></span> -->
+                            </button>
+                        </fieldset>
+                        <?php
 
-                        if(isset($erreur))
-                        {
-                            echo '<font color="red">'.$erreur."</font>";
-                        }
-                    ?>
-                </form>
-                <!-- <script src="../animation/script/main.js"></script> -->
-                   
+                            if(isset($erreur))
+                            {
+                                echo '<font color="red">'.$erreur."</font>";
+                            }
+                        ?>
+                    </form>
 
                 </div>  
             

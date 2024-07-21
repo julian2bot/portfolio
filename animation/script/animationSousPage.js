@@ -6,13 +6,6 @@ document.querySelector('.pointer').addEventListener('animationend', function(eve
 });
 
 
-// // suppr le pointer une fois l'animation effectué
-// // document.querySelector('.line').addEventListener('animationend', function(event) {
-// //     if (event.animationName === 'disparition-all') {
-// //         event.target.remove();
-// //     }
-// // });
-
 
 // suppr la div class .up une fois l'animation effectué
 document.querySelector('.up').addEventListener('animationend', function(event) {
@@ -27,19 +20,16 @@ document.querySelector('.up').addEventListener('animationend', function(event) {
     const DivElem = document.createElement('div');
     DivElem.classList.add('div');
     DivElem.innerHTML = '<a href="../"> <img class="headerMoi" src="../asset/images/moi.png" alt="image dessin de moi" > </a>';
-    // const Style = document.createElement('div');
-    
-    // Style.innerHTML = '<style>body{overflow:scroll;}</style>';
 
 
     if (event.animationName === 'ouverture') {
-        // document.getElementById('main-header').appendChild(DivElem);
         const mainHeader = document.getElementById('main-header');
         const nav = mainHeader.querySelector('nav');
         mainHeader.insertBefore(DivElem, nav);
-        // document.getElementById('main-header').appendChild(Style);
     }
 });
+
+
 
 document.querySelector('.up').addEventListener('animationend', function(event) {
     const DivElem = document.createElement('div');
@@ -47,13 +37,10 @@ document.querySelector('.up').addEventListener('animationend', function(event) {
     DivElem.innerHTML = '<div class="burger"><img src="../asset/images/close.png" alt="Petit Burger" class="burger-img"><div class="buttons"><button class="button" id="changerTheme">Bouton 1</button><button class="button" id="changerAnimation">Bouton 2</button></div></div>';
 
 
-
     if (event.animationName === 'ouverture') {
-        // document.getElementById('main-header').appendChild(DivElem);
         const mainHeader = document.getElementById('main-header');
         const nav = mainHeader.querySelector('nav');
         mainHeader.appendChild(DivElem, nav);
-        // document.getElementById('main-header').appendChild(Style);
     }
 });
 

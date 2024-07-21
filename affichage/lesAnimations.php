@@ -7,6 +7,5 @@
 
         include __DIR__ . '/../affichage/animation.php';
         include __DIR__ . '/../affichage/animationSousPage.php';  
-        // echo '<script src="../animation/script/animationSousPage.js"></script>';
 
       } 

@@ -1,7 +1,7 @@
 <?php
 
 
-// $animation = 'Desactive';      
-$animation = 'Active';
+$animation = 'Desactive';      
+// $animation = 'Active';
 
 ?>

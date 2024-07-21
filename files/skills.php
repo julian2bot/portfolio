@@ -11,26 +11,28 @@
         <link rel="stylesheet" href="../animation/style/animation.css">
     </head>
     <body>
-    <?php
-          include __DIR__ . '/../affichage/lesAnimations.php';
-      ?>
+        <?php
+            include __DIR__ . '/../affichage/lesAnimations.php';
+        ?>
         
         <main>
             <section>
                 <?php include __DIR__ . '/../affichage/header.php'; ?>
                 
                 <?php
-                    // A FAIRE
                     include __DIR__ . '/../affichage/valAnime.php';
                     if ($animation === 'Active') {
                         echo '<script src="../animation/script/animationSousPage.js"></script> ';
 
-                        
                     } else{
                         echo '<script src="../animation/script/noAnimationSousPage.js"></script>';
 
                     }
-                ?>     
+                    echo '<script src="../animation/script/script.js"></script>';
+
+                ?>        
+
+
                 <h1>Compétences</h1>            
                 <div class="card-container">
                     
@@ -51,7 +53,7 @@
                     
                         <h2>Html</h2>
                         <p>
-                            Site internet vitrine et dynamique.
+                            Sites internet vitrines et dynamiques.
                         </p>
                         <progress max="100" value="60"></progress>
 
@@ -62,7 +64,7 @@
                     
                         <h2>Base de données</h2>
                         <p>
-                            Gestion de bases de données, communication avec bases de données.
+                            Gestion de bases de données, communication avec les bases de données.
                         </p>
                         <progress max="100" value="55"></progress>
 
@@ -73,7 +75,7 @@
                     
                         <h2>Css</h2>
                         <p>
-                            Stylisation de pages, animations de page.
+                            Stylisation de pages, animations de pages.
                         </p>
                         <progress max="100" value="70"></progress>
 
@@ -95,7 +97,7 @@
                     
                         <h2>JavaScript</h2>
                         <p>
-                            Gestion client sur site internet, Bot Discord.js, développement de jeux vidéo.
+                            Gestion des clients sur site internet, Bot Discord.js, développement de jeux vidéo.
                         </p>
                         <progress max="100" value="10"></progress>
 
@@ -106,7 +108,7 @@
                     
                         <h2>Arduino</h2>
                         <p>
-                            Création de feux de circulation, robot-réveil, gestion de l'heure, gestion matériel et logiciel.
+                            Création de feux de circulation, robot-réveil, gestion de l’heure, gestion du matériel et du logiciel.
                         </p>
                         <progress max="100" value="75"></progress>
 
@@ -128,7 +130,7 @@
                     
                         <h2>SolidWorks / 3D</h2>
                         <p>
-                            Modélisation et impression de pièces techniques et figurines.
+                            Modélisation et impression de pièces techniques et de figurines.
                         </p>
                         <progress max="100" value="60"></progress>
 
@@ -139,7 +141,7 @@
                     
                         <h2>Modélisme</h2>
                         <p>
-                            Réparation de voitures RC et drones FPV.
+                            Réparation de voitures RC et de drones FPV.
                         </p>
                         <progress max="100" value="90"></progress>
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,6 +26,7 @@
         </div>  
 
         <script src="../animation/script/affichagePDF.js"></script>
+        <!-- <p id="ps">trc</p> -->
         
         <main class="body">
 
@@ -94,6 +96,5 @@
         </main> 
         
         <?php include __DIR__ . '/../affichage/footer.php';?>
-
     </body>
 </html>

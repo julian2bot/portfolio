@@ -1,5 +1,5 @@
 :root{
-
+	--colorFontDarkMode: rgb(29, 29, 29);
 	--animation-duration:1s;
 }
 
@@ -309,7 +309,7 @@ div p{
 
 section {
     margin: auto;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
 }
 
 .AboutMe {
@@ -661,7 +661,9 @@ legend{
 	flex-direction: column;
 	/* background: rgba(255, 255, 255, 0.8); */
 	z-index: 1;
-	background-color: red;
+	padding: 10px;
+	background-color: whitesmoke;
+	border-radius: 20px;
 }
 /* .burger-img:hover{
 	opacity: 0;
@@ -671,7 +673,7 @@ legend{
 	display: flex;
 }
 
-.button {
+/* .button {
 	padding: 10px;
 	background-color: #2196F3;
 	color: white;
@@ -679,4 +681,56 @@ legend{
 	border-radius: 5px;
 	cursor: pointer;
 	font-size: 14px;
+} */
+
+.button {
+	box-shadow:inset 0px 0px 15px 3px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:17px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+/* DARK / white MODE */
+body.dark-theme{
+	background-color: var(--colorFontDarkMode);
+	color: white;
+}
+body.white-theme{
+	background-color: inherit;
+}
+
+p.dark-theme{
+	color: white;
+}
+p.white-theme{
+	color: inherit;
+}
+
+
+header.dark-theme{
+	background-color: grey;
+}
+
+header.white-theme{
+	background-color:inherit;
 }

@@ -1,91 +1,97 @@
+<?php
+// NON UTILISé
+// juste un fichier de test
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About me - PortFolio</title>
-        <link rel="icon" href="../asset/images/moi.png"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changer de Thème</title>
+    <style>
+        body.white-theme {
+            background-color: white;
+            color: black;
+        }
+        body.dark-theme {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="changerTheme">Changer le thème</button>
+    <button id="changerAnimation">Changer le thème</button>
 
-        <link rel="stylesheet" href="../style/global.css">
-        <link rel="stylesheet" href="../style/style.css">  
-        <link rel="stylesheet" href="../animation/style/animation.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeButton = document.getElementById('changerTheme');
 
-    </head>
-    <body>
+            function chargerData() {
+                // Chargement des données depuis le localStorage
+                return { theme: localStorage.getItem('theme') || 'White' };
+            }
+
+            function appliquerTheme(theme) {
+                if (theme === "White") {
+                    document.body.classList.add('white-theme');
+                    document.body.classList.remove('dark-theme');
+                    themeButton.textContent = 'Thème clair';
+                } else {
+                    document.body.classList.add('dark-theme');
+                    document.body.classList.remove('white-theme');
+                    themeButton.textContent = 'Thème sombre';
+                }
+            }
+
+            function changerTheme() {
+                const currentTheme = document.body.classList.contains('white-theme') ? 'White' : 'Dark';
+                const newTheme = currentTheme === 'White' ? 'Dark' : 'White';
+                localStorage.setItem('theme', newTheme);
+                appliquerTheme(newTheme);
+            }
+
+            themeButton.addEventListener('click', changerTheme);
+
+            // Charger les données et appliquer le thème initial
+            const data = chargerData();
+            appliquerTheme(data.theme);
+            
+            const textee =  document.getElementById('ps')
+            const animeButton = document.getElementById('changerAnimation');
+            animeButton.addEventListener('click', changerAnimation);
+            function changerAnimation() {
+                // const currentTheme = document.body.classList.contains('white-theme') ? 'White' : 'Dark';
+                // const newTheme = currentTheme === 'White' ? 'Dark' : 'White';
+                // localStorage.setItem('theme', newTheme);
+                // appliquerTheme(newTheme);
+
+                const currentText = textee.textContent;
+
+                const newtext = currentText === 'a' ? 'b' : 'a';
+                // console.log()
+                textee.textContent = newtext;
+            }
+
+        });
+    </script>
     <?php
-          include __DIR__ . '/../affichage/lesAnimations.php';
-      ?>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
-        <div id="pdf-viewer">
-            <img src="../asset/images/close.png" alt="image croix" class="close">
-            <canvas id="pdf-render"></canvas>
-            <a href="../asset/CV_Marques_Julian.pdf" download>
-                <img src="../asset/images/download.png" alt="logo telechargement" class="downloadImg">
-            </a>
-        </div>  
+    $variable_php = "b";
+    ?>
+    <script>
+        var variable_js = "<?php echo $variable_php; ?>";
+        console.log(variable_js); // Affichera "Bonjour"
+    </script>
 
-        <script src="../animation/script/affichagePDF.js"></script>
-
-        
-        <main class="body">
-
-            <section>
-                
-                <?php include __DIR__ . '/../affichage/header.php'; ?>
-                <script src="script.js"></script>
-
-                <h1>À propos de moi</h1>
-                <div id="aboutMe">
-                    <section class="AboutMe">
-                        <h2>Présentation</h2>
-                        <p>
-                            Je suis Julian Marques, en 1ere année de But Informatique à l'IUT d'Orléans. je suis passionné par le développement informatique ainsi que le modélisme avec plusieurs projets a mon actif ! 
-                        </p>
-                        <p>
-                            Je suis guidé par ma curiosité, mon envie d'apprendre ainsi que par ma persévérance. Mon objectif est d'être diplômé en tant que développeur.
-                        </p>
-                        <p>
-                            N'hésitez pas à me contacter pour en savoir plus !
-                        </p>
-                        <!-- <a href="#">
-                            <img src="../asset/images/cv.png" alt="logo cv?" style="width:2em;">
-                        </a> -->
-                        <div class="container-info">
-                            <div class="info-item">
-
-                                <h3>AGE</h3>
-                                <p>18 ans</p>
-                            </div>
-                            <div class="info-item">
-
-                                <h3>ÉCOLE</h3>
-                                <p>IUT ORLEANS</p>
-                            </div>
-                            <div class="info-item">
-
-                                <h3>ÉTUDE</h3>
-                                <p>BUT INFO</p>
-                            </div>
-                            <div class="info-item">
-                                <h3>CV</h3>
-                                <a href="#cv" class="cv" >
-                                    <img src="../asset/images/cv.png" alt="logo cv?">
-                                </a>    
-                            </div>
-
-                        </div>
-                    </section>
-                    <script src="../animation/script/main.js"></script>
-
-                    
-                    <img src="../asset/images/julian_fpv_.webp" alt="moi image">
-                    <!-- <img src="../asset/images/JsJeuPerso.png" alt="moi image"> -->
-                </div>
-                         
-            </section>
-        </main> 
-        
-        <?php include __DIR__ . '/../affichage/footer.php';?>
-
-    </body>
+    <p id="ps" >
+        <?php
+            echo $variable_php;
+            // if($variable_php === "b"){
+            //     echo "tfsv:";
+            // }
+            // echo 'salut';
+        ?>
+    </p>
+</body>
 </html>

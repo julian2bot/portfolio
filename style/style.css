@@ -1,10 +1,20 @@
 :root{
-	--colorFontDarkMode: rgb(29, 29, 29);
+	/* --colorFontDarkMode: rgb(29, 29, 29); */
+	--colorFontDarkMode: #2A2438;
+	--colorHeaderDarkMode:#5C5470;
+	--colorFooterDarkMode:#352F44;
 	--animation-duration:1s;
+	/*
+	#DBD8E3
+	#5C5470
+	#352F44
+	#2A2438
+	*/
+
 }
 
 *{
-	font-family: roboto sbal;
+	font-family: 'Lato', sans-serif;
 }
 
 .headerMoi {
@@ -55,7 +65,7 @@ li{
 	display: inline-flex;
 	margin-left: 20px;
 	font-size: 30px;
-	font-family: roboto sbal;
+	/* font-family: 'Roboto', sans-serif; */
 
 }
 
@@ -631,10 +641,9 @@ legend{
 
 .burger {
 	width: 4rem;
-	margin-top: 0;
+    top: .4em;
 	/* margin-right:-9em; */
     left: calc(100vw - 4em);
-	/* top: 0; */
 	position: absolute;
 
 	animation-duration: 2s;
@@ -692,7 +701,7 @@ legend{
 	display:inline-block;
 	cursor:pointer;
 	color:#666666;
-	font-family:Arial;
+	/* font-family: 'Lato', sans-serif; */
 	font-size:15px;
 	padding:6px 13px;
 	text-decoration:none;
@@ -728,9 +737,19 @@ p.white-theme{
 
 
 header.dark-theme{
-	background-color: grey;
+	background-color: var(--colorHeaderDarkMode);
 }
 
 header.white-theme{
 	background-color:inherit;
 }
+
+
+footer.dark-theme{
+    background-color: var(--colorFooterDarkMode);
+}
+
+
+/* footer.white-theme{
+    background-color: inherit;
+} */

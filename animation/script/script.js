@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function appliquerTheme(){
         body = document.body;
         header = document.querySelector("header");
+        footer = document.querySelector("footer");
         ps = document.getElementsByTagName('p');
 
 
@@ -56,6 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             header.classList.add('white-theme');
             header.classList.remove('dark-theme');
+            
+            footer.classList.add('white-theme');
+            footer.classList.remove('dark-theme');
             
             for (let p of ps) {
                 p.classList.add('white-theme');
@@ -72,6 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.add('dark-theme');
             header.classList.remove('white-theme');
             
+            footer.classList.add('dark-theme');
+            footer.classList.remove('white-theme');
+            
             for (let p of ps) {
                 p.classList.add('dark-theme');
                 p.classList.remove('white-theme');
@@ -82,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-
+    
     themeButton.addEventListener('click', changerTheme);
 
     

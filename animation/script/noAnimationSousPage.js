@@ -10,7 +10,7 @@ mainHeader.insertBefore(DivElem, nav);
 
 const DivElem2 = document.createElement('div');
 DivElem2.classList.add('burger');
-DivElem2.innerHTML = '<img src="../asset/images/close.png" alt="Petit Burger" class="burger-img"><div class="buttons"><button class="button" id="changerTheme">changer Theme</button><button class="button" id="changerAnimation">changerAnimation</button></div>';
+DivElem2.innerHTML = '<img src="../asset/images/parametre.png" alt="Petit Burger" class="burger-img"><div class="buttons"><button class="button" id="changerTheme">changer Theme</button><button class="button" id="changerAnimation">changerAnimation</button></div>';
 
 
 

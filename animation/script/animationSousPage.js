@@ -34,7 +34,7 @@ document.querySelector('.up').addEventListener('animationend', function(event) {
 document.querySelector('.up').addEventListener('animationend', function(event) {
     const DivElem = document.createElement('div');
     DivElem.classList.add('burger');
-    DivElem.innerHTML = '<img src="../asset/images/close.png" alt="Petit Burger" class="burger-img"><div class="buttons"><button class="button" id="changerTheme">changer Theme</button><button class="button" id="changerAnimation">changerAnimation</button></div>';
+    DivElem.innerHTML = '<img src="../asset/images/parametre.png" alt="Petit Burger" class="burger-img"><div class="buttons"><button class="button" id="changerTheme">changer Theme</button><button class="button" id="changerAnimation">changerAnimation</button></div>';
 
 
     if (event.animationName === 'ouverture') {

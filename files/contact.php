@@ -120,23 +120,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           include __DIR__ . '/../affichage/lesAnimations.php';
       ?> 
         
-        <script src="../animation/script/animationSousPage.js"></script>
+        <!-- <script src="../animation/script/animationSousPage.js"></script> -->
         
         <main>
             <section>
                 <?php include __DIR__ . '/../affichage/header.php'; ?>
                 <?php
-                    include __DIR__ . '/../affichage/valAnime.php';
+                    // include __DIR__ . '/../affichage/valAnime.php';
                     if ($animation === 'Active') {
                         echo '<script src="../animation/script/animationSousPage.js"></script> ';
-
+                        echo '<script>
+                        setTimeout(function() {
+                            var leScript = document.createElement("script");
+                            leScript.src = "../animation/script/script.js";
+                            document.head.appendChild(leScript);
+                        }, 2000); // 2000 millisecondes = 2 secondes
+                    </script>';
                     } else{
                         echo '<script src="../animation/script/noAnimationSousPage.js"></script>';
+                        echo '<script src="../animation/script/script.js"></script>';
 
-                    }
-                    echo '<script src="../animation/script/script.js"></script>';
-
-                ?>        
+                    }                    
+                ?>         
 
 
                 <h1>Contact</h1>            
@@ -146,11 +151,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <legend>Contact Me</legend>
                             <div class="form-input">
                                 <label for="Name">Nom & Prenom *</label>
-                                <input type="text" name="Name" id="Name" placeholder=" " autocomplete="off" class="form-control-material"  />
+                                <input type="text" name="Name" id="Name" placeholder=" " autocomplete="off" class="form-control-material" required="required"  />
                             </div>
                             <div class="form-input">
                                 <label for="email">Email *</label>
-                                <input type="email" name="email" id="email" placeholder=" " autocomplete="off" class="form-control-material"  />
+                                <input type="email" name="email" id="email" placeholder=" " autocomplete="off" class="form-control-material"  required="required" />
                             </div>
                             <div class="form-input">
                                 <label for="tel">N° telephone</label>
@@ -158,11 +163,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </div>
                             <div class="form-input">
                                 <label for="sujet">Sujet *</label>
-                                <input type="text" name="sujet" id="sujet" placeholder=" " autocomplete="off" class="form-control-material"  />
+                                <input type="text" name="sujet" id="sujet" placeholder=" " autocomplete="off" class="form-control-material" required="required"  />
                             </div>
                             <div class="form-input">
                                 <label for="message">Message * </label>
-                                <textarea name="message" id="message"></textarea>
+                                <textarea name="message" id="message"  required="required" ></textarea>
                             </div>
                             <button type="submit" class="btn">
                                 Envoyer

@@ -9,3 +9,8 @@
         include __DIR__ . '/../affichage/animationSousPage.php';  
 
       } 
+      // else{
+      //   include __DIR__ . '/../affichage/print.js';  
+      // }
+
+?>

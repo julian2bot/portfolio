@@ -8,12 +8,13 @@ const nav = mainHeader.querySelector('nav');
 mainHeader.insertBefore(DivElem, nav);
 
 
-const DivElem2 = document.createElement('div');
-DivElem2.classList.add('burger');
-DivElem2.innerHTML = '<img src="../asset/images/parametre.png" alt="Petit Burger" class="burger-img"><div class="buttons"><button class="button" id="changerTheme">changer Theme</button><button class="button" id="changerAnimation">changerAnimation</button></div>';
+const divReglage = document.createElement('div');
+divReglage.classList.add('burger');
+divReglage.innerHTML = '<img src="../asset/images/parametre.png" alt="Petit Burger" class="burger-img"><div class="buttons"><button class="button" id="changerTheme">changer Theme</button><button class="button" id="changerAnimation">changerAnimation</button></div>';
 
 
 
-const mainHeader2 = document.getElementById('main-header');
-const nav2 = mainHeader2.querySelector('nav');
-mainHeader2.appendChild(DivElem2, nav2);
+// const mainHeader2 = document.getElementById('main-header');
+// const nav2 = mainHeader2.querySelector('nav');
+// mainHeader2.appendChild(divReglage, nav2);
+mainHeader.appendChild(divReglage, nav);

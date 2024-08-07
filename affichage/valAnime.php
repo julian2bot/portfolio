@@ -1,11 +1,11 @@
 <?php
 $animation = 'Desactive';      
-// $animation = 'Active';
+$animation = 'Active';
 
 // $animation = "b";
 // $animation = 'truc';  
 
-$anime = "Desactive";
+// $anime = "Desactive";
 echo  '<p id="ps" style="font-size:0;">'.$animation.'</p>';
 // echo  '<p id="ps" >'.$animation.'</p>';
 // $html = file_get_contents( __DIR__ . '/../files/aboutMe.php');

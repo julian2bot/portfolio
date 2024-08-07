@@ -4,6 +4,7 @@
 	--colorHeaderDarkMode:#5C5470;
 	--colorFooterDarkMode:#352F44;
 	--animation-duration:1s;
+	--colorinputDarkMode:white;
 	/*
 	#DBD8E3
 	#5C5470
@@ -475,7 +476,6 @@ legend{
 	background-color: transparent; 
 	caret-color: black; 
 	outline: none; 
-	height: calc(hauteur max);
 	
 }
 
@@ -753,3 +753,13 @@ footer.dark-theme{
 /* footer.white-theme{
     background-color: inherit;
 } */
+
+.form-input > input.dark-theme{
+	color: var(--colorinputDarkMode);
+	border-color:var(--colorinputDarkMode);
+}
+
+.form-input > input.white-theme{
+	color:inherit;
+	border-color:inherit;
+}

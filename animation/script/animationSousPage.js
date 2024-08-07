@@ -32,15 +32,15 @@ document.querySelector('.up').addEventListener('animationend', function(event) {
 
 
 document.querySelector('.up').addEventListener('animationend', function(event) {
-    const DivElem = document.createElement('div');
-    DivElem.classList.add('burger');
-    DivElem.innerHTML = '<img src="../asset/images/parametre.png" alt="Petit Burger" class="burger-img"><div class="buttons"><button class="button" id="changerTheme">changer Theme</button><button class="button" id="changerAnimation">changerAnimation</button></div>';
+    const divReglage = document.createElement('div');
+    divReglage.classList.add('burger');
+    divReglage.innerHTML = '<img src="../asset/images/parametre.png" alt="Petit Burger" class="burger-img"><div class="buttons"><button class="button" id="changerTheme">changer Theme</button><button class="button" id="changerAnimation">changerAnimation</button></div>';
 
 
     if (event.animationName === 'ouverture') {
         const mainHeader = document.getElementById('main-header');
         const nav = mainHeader.querySelector('nav');
-        mainHeader.appendChild(DivElem, nav);
+        mainHeader.appendChild(divReglage, nav);
     }
 });
 
@@ -77,4 +77,4 @@ document.querySelectorAll('.nav-header').forEach(link => {
     
 //     return data ? JSON.parse(data) : initialData;
 // }
-            
+

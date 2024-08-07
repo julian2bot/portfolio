@@ -93,5 +93,21 @@
             // echo 'salut';
         ?>
     </p>
+
+
+    <img src="../asset/images/parametre.png" alt="Petit Burger" class="burger-img">
+    <div class="buttons">
+        <button class="button" id="changerTheme">changer Theme</button>
+        <button class="button" id="changerAnimation">changerAnimation</button>
+    </div>
+
+
+    <img src="../asset/images/parametre.png" alt="Petit Burger" class="burger-img">
+    <div class="buttons">
+        <button class="button" id="changerTheme">changer Theme</button>
+        <button class="button" id="changerAnimation">changerAnimation</button>
+    </div>
+
+
 </body>
 </html>

@@ -20,17 +20,22 @@
 
                 <?php include __DIR__ . '/../affichage/header.php'; ?>
                 <?php
-                    include __DIR__ . '/../affichage/valAnime.php';
+                    // include __DIR__ . '/../affichage/valAnime.php';
                     if ($animation === 'Active') {
                         echo '<script src="../animation/script/animationSousPage.js"></script> ';
-
+                        echo '<script>
+                        setTimeout(function() {
+                            var leScript = document.createElement("script");
+                            leScript.src = "../animation/script/script.js";
+                            document.head.appendChild(leScript);
+                        }, 2000); // 2000 millisecondes = 2 secondes
+                    </script>';
                     } else{
                         echo '<script src="../animation/script/noAnimationSousPage.js"></script>';
+                        echo '<script src="../animation/script/script.js"></script>';
 
-                    }
-                    echo '<script src="../animation/script/script.js"></script>';
-
-                ?>        
+                    }                    
+                ?>       
    
                 
                 <h1>Projets</h1>

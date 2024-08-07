@@ -8,25 +8,25 @@
     <nav id="nav">
         <ul>
             <li>
-                <a href="../files/aboutMe" class="nav-header"> À propos de moi</a>
+                <a href="./../files/aboutMe.php" class="nav-header"> À propos de moi</a>
             </li> 
             <li>
                 <p>|</p>
             </li>
             <li>
-                <a href="../files/skills" class="nav-header">Compétences</a>
+                <a href="./../files/skills.php" class="nav-header">Compétences</a>
             </li>
             <li>
                 <p>|</p>
             </li>
             <li>
-                <a href="../files/projects" class="nav-header">Projets</a>
+                <a href="./../files/projects.php" class="nav-header">Projets</a>
             </li>
             <li>
                 <p>|</p>
             </li>
             <li>
-                <a href="../files/contact" class="nav-header">Contact</a>
+                <a href="./../files/contact.php" class="nav-header">Contact</a>
             </li>
         </ul>
     </nav>

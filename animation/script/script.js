@@ -82,7 +82,7 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
                 input_.classList.remove('dark-theme');
             }     
 
-            themeButton.textContent = 'Thème sombre';
+            themeButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>';
 
         }   
         else{
@@ -105,7 +105,7 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
                 input_.classList.remove('white-theme');
             }
 
-            themeButton.textContent = 'Thème clair';
+            themeButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>';
         }
     }
 
@@ -133,7 +133,12 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
         sauvegarderData(data);
         textee.textContent = newtext;
         animeButton.textContent= animeButton.textContent === 'Active Animation' ? 'Desactive Animation' : 'Active Animation';
-        
+        // if(animeButton.textContent === 'Active Animation'){
+        //     animeButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-play"><path d="M10 7.75a.75.75 0 0 1 1.142-.638l3.664 2.249a.75.75 0 0 1 0 1.278l-3.664 2.25a.75.75 0 0 1-1.142-.64z"/><path d="M12 17v4"/><path d="M8 21h8"/><rect x="2" y="3" width="20" height="14" rx="2"/></svg>';
+        // } else if (animeButton.textContent === 'Desactive Animation'){
+        //     animeButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-stop"><path d="M12 17v4"/><path d="M8 21h8"/><rect x="2" y="3" width="20" height="14" rx="2"/><rect x="9" y="7" width="6" height="6" rx="1"/></svg>';
+
+        // }
     }
 
     function animationDefault(){
@@ -144,6 +149,7 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
     }
 
     animationDefault();
+
 }
 document.addEventListener('DOMContentLoaded', () => {
     console.log("ici");
@@ -223,8 +229,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 input_.classList.add('white-theme');
                 input_.classList.remove('dark-theme');
             }     
+            themeButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>';
 
-            themeButton.textContent = 'Thème sombre';
+            // themeButton.textContent = 'Thème sombre';
 
         }   
         else{
@@ -246,8 +253,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 input_.classList.add('dark-theme');
                 input_.classList.remove('white-theme');
             }
+            themeButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>';
 
-            themeButton.textContent = 'Thème clair';
+            // themeButton.textContent = 'Thème clair';
         }
     }
 
@@ -275,7 +283,12 @@ document.addEventListener('DOMContentLoaded', () => {
         sauvegarderData(data);
         textee.textContent = newtext;
         animeButton.textContent= animeButton.textContent === 'Active Animation' ? 'Desactive Animation' : 'Active Animation';
-        
+        // if(animeButton.textContent === 'Active Animation'){
+        //     animeButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-play"><path d="M10 7.75a.75.75 0 0 1 1.142-.638l3.664 2.249a.75.75 0 0 1 0 1.278l-3.664 2.25a.75.75 0 0 1-1.142-.64z"/><path d="M12 17v4"/><path d="M8 21h8"/><rect x="2" y="3" width="20" height="14" rx="2"/></svg>';
+        // } else if (animeButton.textContent === 'Desactive Animation'){
+        //     animeButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-stop"><path d="M12 17v4"/><path d="M8 21h8"/><rect x="2" y="3" width="20" height="14" rx="2"/><rect x="9" y="7" width="6" height="6" rx="1"/></svg>';
+
+        // }
     }
 
     function animationDefault(){
@@ -284,7 +297,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // textee.textContent = textee.textContent === 'Active' ? 'Desactive' : 'Active';
     
     }
-
     animationDefault();
 });
 

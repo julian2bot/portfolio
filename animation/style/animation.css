@@ -141,6 +141,11 @@ a:hover{
     transition: 200ms;
 }
 
+footer a:hover{
+    color: rgb(209, 206, 206);
+    transition: 200ms;
+}
+
 
 
 

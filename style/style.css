@@ -763,3 +763,14 @@ footer.dark-theme{
 	color:inherit;
 	border-color:inherit;
 }
+
+
+.form-input > textarea.dark-theme{
+	color: var(--colorinputDarkMode);
+	border-color:var(--colorinputDarkMode);
+}
+
+.form-input > textarea.white-theme{
+	color:inherit;
+	border-color:inherit;
+}

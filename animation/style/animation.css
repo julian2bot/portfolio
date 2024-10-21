@@ -10,15 +10,22 @@
     --temps-animation5:1s; */
     
     /* best time ? */
+    --temps-animation1:.4s;
+    --temps-animation2:.46s;
+    --disparition-animation:30ms;
+    --temps-animation3:.5s;
+    --color-animation1:white;
+    --temps-animation4:.5s;
+    --temps-animation5:.5s;
     
     /* sous page */
-    --temps-animation1:.4s;
+    /* --temps-animation1:.4s;
     --temps-animation2:.6s;
     --disparition-animation:50ms;
     --temps-animation3:1s;
     --color-animation1:white;
     --temps-animation4:1s;
-    --temps-animation5:1.2s;
+    --temps-animation5:1.2s; */
     
     /* index */
     /* --temps-animation6:.6s; */

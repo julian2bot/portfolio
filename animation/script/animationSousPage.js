@@ -59,7 +59,7 @@ document.querySelectorAll('.nav-header').forEach(link => {
             const animationDuration = getComputedStyle(document.documentElement).getPropertyValue('--temps-animation6');
             console.log("temps animation: " + animationDuration);
 
-            const durationInMs = parseFloat(animationDuration) * 1000 + 100;
+            const durationInMs = parseFloat(animationDuration) * 1000 - 100;
             console.log("temps animation en ms: " + durationInMs);
 
             const targetId = this.getAttribute('href');

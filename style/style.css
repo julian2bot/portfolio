@@ -501,14 +501,20 @@ legend{
 
 .btn {
     width: 10vw;
-    height: 10vh;
-	margin-top: .3em;
-    /* background-color: red; */
-    /* position: relative; */
-	/* border-radius: 50% 50% 68% 32% / 45% 30% 70% 55% ; */
-	border-radius: 76% 24% 69% 31% / 30% 45% 55% 70%;
+    height: 2em;
+	margin-top: 1em;
+	border-color: #000;
+    background-color: white;
 
 }
+
+.btn:hover {
+    box-shadow: .3rem .3rem 0 #000;
+	transition-duration: .2s;
+    transform: translate(-.4rem, -.4rem);
+}
+
+
 /* 
 .btn::before,
 .btn::after {

@@ -1,6 +1,6 @@
 <?php
 $animation = 'Desactive';      
-$animation = 'Active';
+// $animation = 'Active';
 
 // $animation = "b";
 // $animation = 'truc';  

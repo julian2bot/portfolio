@@ -1,0 +1,83 @@
+{
+    
+  "fr": [
+    {
+      "title": "Python",
+      "description": "IA Pacman, gestion de données, gestion de serveur.",
+      "img": "../asset/images/python.png",
+      "altImg": "Logo de Python"
+    },
+    {
+      "title": "HTML",
+      "description": "Sites internet vitrines et dynamiques.",
+      "img": "../asset/images/html.png",
+      "altImg": "Logo HTML"
+    },
+    {
+      "title": "Base de données",
+      "description": "Gestion de bases de données, communication avec les bases de données.",
+      "img": "../asset/images/base-de-donnees.png",
+      "altImg": "Logo Base de Données"
+    },
+    {
+      "title": "Css",
+      "description": "Stylisation de pages, animations de pages.",
+      "img": "../asset/images/css.png",
+      "altImg": "Logo de CSS"
+    },
+    {
+      "title": "Php",
+      "description": "Gestion serveur-client, simplification de pages.",
+      "img": "../asset/images/php.png",
+      "altImg": "Logo de php"
+    },
+    {
+      "title": "JavaScript",
+      "description": "Gestion des clients sur site internet, Bot Discord.js, développement de jeux vidéo.",
+      "img": "../asset/images/javascript.png",
+      "altImg": "Logo JavaScript"
+    },
+    {
+      "title": "Arduino",
+      "description": "Création de feux de circulation, robot-réveil, gestion de l’heure, gestion du matériel et du logiciel.",
+      "img": "../asset/images/arduino.png",
+      "altImg": "Logo Arduino"
+    },
+    {
+      "title": "Java",
+      "description": "Implémentation front-end et back-end d'un logiciel.",
+      "img": "../asset/images/java.png",
+      "altImg": "Logo de Java"
+    },
+    {
+      "title": "SolidWorks / 3D",
+      "description": "Modélisation et impression de pièces techniques et de figurines.",
+      "img": "../asset/images/solidworks.png",
+      "altImg": "Logo SolidWorks"
+    },
+    {
+      "title": "Modélisme",
+      "description": "Réparation de voitures RC et de drones FPV.",
+      "img": "../asset/images/solidworks.png",
+      "altImg": "Logo Modélisme"
+    },
+    {
+      "title": "Conception schéma electrique",
+      "description": "Création et réalisation de schémas électriques pour divers projets.",
+      "img": "../asset/images/circuit-electrique.png",
+      "altImg": "Logo schéma electrique"
+    }
+  
+  ],
+    
+    "en":[
+      {
+      "title": 1,
+      "description": 1,
+      "img": ",",
+      "altImg": 1
+    }
+  ]
+    
+    
+}

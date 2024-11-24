@@ -33,8 +33,27 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
         console.log(chargerData());
     }
 
+    
+    function changerLang() {
+        if(document.cookie === "lang=fr"){
 
-    //   // appliquer le style en fonction du sexe
+            document.cookie = "lang=en; path=/; expires=" + new Date(new Date().getTime() + 3600 * 24 * 365 * 1000).toUTCString();
+            // langButton.textContent= langButton.textContent === 'fr' ? 'en' : 'fr';
+        
+        }
+        else{
+            document.cookie = "lang=fr; path=/; expires=" + new Date(new Date().getTime() + 3600 * 24 * 365 * 1000).toUTCString();
+            // langButton.textContent= langButton.textContent === 'en' ? 'fr' : 'en';
+        }
+
+
+        console.log(langButton);
+        window.location.href ="";
+        console.log(document.cookie);
+        return;
+    }
+
+        //   // appliquer le style en fonction du sexe
     //   function appliquerStyle(data) {
     //     if (data.sexe === 'M') {
     //       document.querySelector('.card-container').classList.add('blue');
@@ -51,6 +70,11 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
     
     
     const themeButton = document.getElementById('changerTheme');
+
+
+    const langButton = document.getElementById('changerLang');
+    langButton.addEventListener('click', changerLang);
+
     console.log(document.getElementById('changerTheme'));
 
     function appliquerTheme(){
@@ -188,6 +212,27 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(chargerData());
     }
 
+   
+
+    function changerLang() {
+        if(document.cookie === "lang=fr"){
+
+            document.cookie = "lang=en; path=/; expires=" + new Date(new Date().getTime() + 3600 * 24 * 365 * 1000).toUTCString();
+            // langButton.textContent= langButton.textContent === 'fr' ? 'en' : 'fr';
+        
+        }
+        else{
+            document.cookie = "lang=fr; path=/; expires=" + new Date(new Date().getTime() + 3600 * 24 * 365 * 1000).toUTCString();
+            // langButton.textContent= langButton.textContent === 'en' ? 'fr' : 'en';
+            
+        }
+
+
+        console.log(langButton);
+        window.location.href ="";
+        console.log(document.cookie);
+        return;
+    }
 
     //   // appliquer le style en fonction du sexe
     //   function appliquerStyle(data) {
@@ -206,8 +251,19 @@ document.addEventListener('DOMContentLoaded', () => {
     
     
     const themeButton = document.getElementById('changerTheme');
-    console.log(document.getElementById('changerTheme'));
-
+    const langButton = document.getElementById('changerLang');
+    // console.log(document.getElementById('changerTheme'));
+    
+    //  init texte bouton lang
+    if(document.cookie === "lang=fr"){
+        console.log('je passe');
+        langButton.textContent = 'en';
+    }else{
+        langButton.textContent = 'fr';        
+    }
+    
+    
+    
     function appliquerTheme(){
         body = document.body;
         header = document.querySelector("header");
@@ -279,6 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     themeButton.addEventListener('click', changerTheme);
+    langButton.addEventListener('click', changerLang);
 
     
     
@@ -294,7 +351,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const currentText = textee.textContent;
 
-        const newtext = currentText === 'Active' ? 'Desactive' : 'Active';
+        const newtext = currentText === 'Active' ? 'Desactive' : 'Active';*
+
+        
         // console.log()
         data.animation = newtext;
         sauvegarderData(data);

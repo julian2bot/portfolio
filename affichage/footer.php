@@ -1,3 +1,7 @@
+<?php 
+
+      
+echo '
 <footer>
     <div class="footer-container">
         <div class="social-icons">
@@ -16,11 +20,13 @@
         </div>
         <div>
             <p>JULIAN MARQUES</p>
-            <p>PORTFOLIO SITE WEB © 2024</p>
+            <p>'.$headerFooterJson["$lang"]["footer"]["credit"].'</p>
         </div>
         <div class="contact-info">
-            <p>Téléphone : <a href="tel:+33695412699">+33 6 95 41 26 99</a></p>
-            <p>Email : <a href="mailto:marquesjulian26@gmail.com">marquesjulian26@gmail.com</a></p>
+            <p>'.$headerFooterJson["$lang"]["footer"]["tel"].' : <a href="tel:+33695412699">+33 6 95 41 26 99</a></p>
+            <p>'.$headerFooterJson["$lang"]["footer"]["mail"].' : <a href="mailto:marquesjulian26@gmail.com">marquesjulian26@gmail.com</a></p>
         </div>
     </div>
 </footer>
+';
+?>

@@ -15,6 +15,11 @@
     <body>
     <?php
           include __DIR__ . '/../affichage/lesAnimations.php';
+      
+          include_once './../asset/utils/util.php';
+      
+          $aboutmeJson = getProducts("./../asset/data/aboutMe.json");
+        // $lang = "fr";
       ?>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
         <div id="pdf-viewer">
@@ -51,41 +56,41 @@
                     }                    
                 ?>        
 
-                <h1>À propos de moi</h1>
+                <h1><?php echo $aboutmeJson["$lang"]["title"]; ?></h1>
 
                 <div id="aboutMe">
                     
                     <section class="AboutMe">
-                        <h2>Présentation</h2>
+                        <h2><?php echo $aboutmeJson["$lang"]["underTitle"]; ?></h2>
                         <p> 
-                            Je suis Julian Marques, en 1ère année de BUT Informatique à l'IUT d'Orléans. Je suis passionné par le développement informatique ainsi que par le modélisme, avec plusieurs projets à mon actif !
+                        <?php echo $aboutmeJson["$lang"]["description"]; ?>
                         </p>
                         <p>
-                            Je suis guidé par ma curiosité, mon envie d'apprendre ainsi que par ma persévérance. Mon objectif est d'être diplômé en tant que développeur.
+                        <?php echo $aboutmeJson["$lang"]["description2"]; ?>
                         </p>
                         <p>
-                            N'hésitez pas à me contacter pour en savoir davantage !
+                        <?php echo $aboutmeJson["$lang"]["final"]; ?>
                         </p>
 
                         <div class="container-info">
                             <div class="info-item">
 
-                                <h3>AGE</h3>
-                                <p>18 ans</p>
+                                <h3><?php echo $aboutmeJson["$lang"]["age"]; ?></h3>
+                                <p><?php echo $aboutmeJson["$lang"]["valeurAge"]; ?></p>
                             </div>
                             <div class="info-item">
 
-                                <h3>ÉCOLE</h3>
-                                <p>IUT ORLEANS</p>
+                                <h3><?php echo $aboutmeJson["$lang"]["school"]; ?></h3>
+                                <p><?php echo $aboutmeJson["$lang"]["schoolValue"]; ?></p>
                             </div>
                             <div class="info-item">
 
-                                <h3>ÉTUDE</h3>
-                                <p>BUT INFO</p>
+                                <h3><?php echo $aboutmeJson["$lang"]["studie"]; ?></h3>
+                                <p><?php echo $aboutmeJson["$lang"]["studieValue"]; ?></p>
                             </div>
                             <div class="info-item">
 
-                                <h3>CV</h3>
+                                <h3><?php echo $aboutmeJson["$lang"]["cv"]; ?></h3>
                                 <a href="#cv" class="cv" >
                                     <img src="../asset/images/cv.png" alt="logo cv?">
                                 </a>    

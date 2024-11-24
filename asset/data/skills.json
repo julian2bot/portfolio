@@ -70,14 +70,73 @@
   
   ],
     
-    "en":[
+    "en": [
       {
-      "title": 1,
-      "description": 1,
-      "img": ",",
-      "altImg": 1
-    }
-  ]
-    
+        "title": "Python",
+        "description": "Todo",
+        "img": "../asset/images/python.png",
+        "altImg": "Logo de Python"
+      },
+      {
+        "title": "HTML",
+        "description": "todo",
+        "img": "../asset/images/html.png",
+        "altImg": "Logo HTML"
+      },
+      {
+        "title": "Base de données",
+        "description": "todo",
+        "img": "../asset/images/base-de-donnees.png",
+        "altImg": "Logo Base de Données"
+      },
+      {
+        "title": "Css",
+        "description": "todo",
+        "img": "../asset/images/css.png",
+        "altImg": "Logo de CSS"
+      },
+      {
+        "title": "Php",
+        "description": "todo",
+        "img": "../asset/images/php.png",
+        "altImg": "Logo de php"
+      },
+      {
+        "title": "JavaScript",
+        "description": "todo",
+        "img": "../asset/images/javascript.png",
+        "altImg": "Logo JavaScript"
+      },
+      {
+        "title": "Arduino",
+        "description": "todo",
+        "img": "../asset/images/arduino.png",
+        "altImg": "Logo Arduino"
+      },
+      {
+        "title": "Java",
+        "description": "todo",
+        "img": "../asset/images/java.png",
+        "altImg": "Logo de Java"
+      },
+      {
+        "title": "SolidWorks / 3D",
+        "description": "todo",
+        "img": "../asset/images/solidworks.png",
+        "altImg": "Logo SolidWorks"
+      },
+      {
+        "title": "Modélisme",
+        "description": "todo",
+        "img": "../asset/images/solidworks.png",
+        "altImg": "Logo Modélisme"
+      },
+      {
+        "title": "Conception schéma electrique",
+        "description": "todo",
+        "img": "../asset/images/circuit-electrique.png",
+        "altImg": "Logo schéma electrique"
+      }
+    ]
     
 }

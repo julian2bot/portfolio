@@ -24,8 +24,15 @@
             //   if ($animation === 'Active') {
             //      include __DIR__ . '/affichage/animation.php';
             //   }
-              include __DIR__ . '/affichage/animation.php';
-
+            include __DIR__ . '/affichage/valAnime.php';
+            
+            include __DIR__ . '/affichage/animation.php';
+            
+            include_once './asset/utils/util.php';
+    
+            $headerFooterJson = getProducts("./asset/data/recurante.json");
+            // echo $headerFooterJson["fr"]["accueil"]["subTitle"];
+            
     	?>
             <section class="pageAcceuil">
             
@@ -33,25 +40,25 @@
                 <nav id="nav">
                     <ul>
                         <li>
-                            <a href="./files/aboutMe.php" class="nav-header"> À propos de moi</a>
+                            <a href="./files/aboutMe.php" class="nav-header"> <?php echo $headerFooterJson[$lang]["header"]["aboutMe"];?></a>
                         </li> 
                         <li>
                             <p>|</p>
                         </li>
                         <li>
-                            <a href="./files/skills.php" class="nav-header">Compétences</a>
+                            <a href="./files/skills.php" class="nav-header"> <?php echo $headerFooterJson[$lang]["header"]["skills"];?></a>
                         </li>
                         <li>
                             <p>|</p>
                         </li>
                         <li>
-                            <a href="./files/projects.php" class="nav-header">Projets</a>
+                            <a href="./files/projects.php" class="nav-header"> <?php echo $headerFooterJson[$lang]["header"]["project"];?></a>
                         </li>
                         <li>
                             <p>|</p>
                         </li>
                         <li>
-                            <a href="./files/contact.php" class="nav-header">Contact</a>
+                            <a href="./files/contact.php" class="nav-header"> <?php echo $headerFooterJson[$lang]["header"]["contactUs"];?></a>
                         </li>
                     </ul>
                 </nav>
@@ -60,7 +67,7 @@
 			<img class="moi" src="./asset/images/moi.png" alt="image dessin de moi">
 
             <h1>JULIAN MARQUES</h1>
-            <h2> Étudiant & Développeur </h2>
+            <h2> <?php echo $headerFooterJson[$lang]["accueil"]["subTitle"];?> </h2>
             <h2>&lt; / &gt;</h2>
             <script src="animation/script/main.js"></script>
 

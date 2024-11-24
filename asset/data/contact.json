@@ -1,0 +1,28 @@
+{
+    
+  "fr":
+    {
+      "title": "Contact",
+      "legend": "Me contacter",
+      "champName": "Nom & Prenom *",
+      "champMail": "Email *",
+      "champNum": "N° telephone",
+      "champSuject": "Sujet *",
+      "champMsg": "Message *",
+      "button": "Envoyer"
+    },
+    
+    "en":
+    {
+      "title": "Contact",
+      "legend": "Contact Me",
+      "champName": "LastName & name *",
+      "champMail": "mail *",
+      "champNum": "phone",
+      "champSuject": "Suject *",
+      "champMsg": "Message *",
+      "button": "Send"
+    }
+    
+    
+}

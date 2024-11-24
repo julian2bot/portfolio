@@ -1,0 +1,126 @@
+{
+    
+  "fr": [
+    {
+      "title": "Hand Traching Python",
+      "projectLink": "https://github.com/julian1bot/hand-tracking",
+      "description": "IA en Python qui détecte les mouvements de la main et interagit avec l'ordinateur en fonction de ceux-ci.",
+      "img": "../asset/images/handtracking.png",
+      "altImg": "Logo de "
+    },
+    {
+      "title": "Môm'tessori",
+      "projectLink": "#",
+      "description": "Site internet relié à une base de données, gérant la connexion/inscription et les rôles (utilisateur et administrateur).",
+      "img": "../asset/images/logoMomtessorie.png",
+      "altImg": "Logo de "
+    },
+    {
+      "title": "Multi Game",
+      "projectLink": "https://github.com/julian1bot/Multi-Game",
+      "description": "Application mobile avec plusieurs petits jeux (projet de lycée).",
+      "img": "../asset/images/multigame.png",
+      "altImg": "Logo de "
+    },
+    {
+      "title": "IA Pacman",
+      "projectLink": "https://github.com/julian2bot/pacman",
+      "description": "IA pour le jeu Pacman contrôlant automatiquement les fantômes et Pacman, dans le but de réaliser des combats entre plusieurs Pacman et fantômes.",
+      "img": "../asset/images/fantD.png",
+      "altImg": "Logo de "
+    },
+    {
+      "title": "Jeu en JavaScript",
+      "projectLink": "#",
+      "description": "Création d'un jeu pour les 24 heures de l'info, gestion d'un personnage et d'une carte.",
+      "img": "../asset/images/JSJeuPerso.png",
+      "altImg": "Logo de "
+    },
+    {
+      "title": "Arduino",
+      "projectLink": "#",
+      "description": "Diverses créations de systèmes alliant logiciel et matériel.",
+      "img": "../asset/images/arduino.png",
+      "altImg": "Logo de "
+    },
+    {
+      "title": "jeux olympiques IUT",
+      "projectLink": "https://github.com/chris-mathevet/Jeux-IUT-Olympiques",
+      "description": "Conception d'un logiciel permettant de gérer des jeux olympiques, incluant la gestion des athlètes, des équipes, des épreuves et des résultats, avec une interface graphique.",
+      "img": "../asset/images/medailleOr.png",
+      "altImg": "Logo de "
+    },
+    {
+      "title": "Figurine 3D",
+      "projectLink": "#",
+      "description": "Modélisation 3D d'un poussin dans le style d'une peluche.",
+      "img": "../asset/images/piou.png",
+      "altImg": "Logo de "
+    }
+  
+  
+  ],
+    
+    "en":[
+      {
+        "title": "Hand Traching Python",
+        "projectLink": "https://github.com/julian1bot/hand-tracking",
+        "description": "todo",
+        "img": "../asset/images/handtracking.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "Môm'tessori",
+        "projectLink": "#",
+        "description": "todo",
+        "img": "../asset/images/logoMomtessorie.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "Multi Game",
+        "projectLink": "https://github.com/julian1bot/Multi-Game",
+        "description": "todo",
+        "img": "../asset/images/multigame.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "IA Pacman",
+        "projectLink": "https://github.com/julian2bot/pacman",
+        "description": "todo",
+        "img": "../asset/images/fantD.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "Jeu en JavaScript",
+        "projectLink": "#",
+        "description": "todo",
+        "img": "../asset/images/JSJeuPerso.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "Arduino",
+        "projectLink": "#",
+        "description": "todo",
+        "img": "../asset/images/arduino.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "jeux olympiques IUT",
+        "projectLink": "https://github.com/chris-mathevet/Jeux-IUT-Olympiques",
+        "description": "todo",
+        "img": "../asset/images/medailleOr.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "Figurine 3D",
+        "projectLink": "#",
+        "description": "todo",
+        "img": "../asset/images/piou.png",
+        "altImg": "Logo de "
+      }
+    
+    
+    ]
+    
+    
+}

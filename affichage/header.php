@@ -2,7 +2,7 @@
 
 include_once './../asset/utils/util.php';
       
-$headerJson = getProducts("./../asset/data/recurante.json");
+$headerFooterJson = getProducts("./../asset/data/recurante.json");
 
 echo '<header id="main-header">
     <!-- <div class="div">
@@ -13,25 +13,25 @@ echo '<header id="main-header">
     <nav id="nav">
         <ul>
             <li>
-                <a href="./../files/aboutMe.php" class="nav-header">'.$headerJson["$lang"]["header"]["aboutMe"].'</a>
+                <a href="./../files/aboutMe.php" class="nav-header">'.$headerFooterJson["$lang"]["header"]["aboutMe"].'</a>
             </li> 
             <li>
                 <p>|</p>
             </li>
             <li>
-                <a href="./../files/skills.php" class="nav-header">'.$headerJson["$lang"]["header"]["skills"].'</a>
+                <a href="./../files/skills.php" class="nav-header">'.$headerFooterJson["$lang"]["header"]["skills"].'</a>
             </li>
             <li>
                 <p>|</p>
             </li>
             <li>
-                <a href="./../files/projects.php" class="nav-header">'.$headerJson["$lang"]["header"]["project"].'</a>
+                <a href="./../files/projects.php" class="nav-header">'.$headerFooterJson["$lang"]["header"]["project"].'</a>
             </li>
             <li>
                 <p>|</p>
             </li>
             <li>
-                <a href="./../files/contact.php" class="nav-header">'.$headerJson["$lang"]["header"]["contactUs"].'</a>
+                <a href="./../files/contact.php" class="nav-header">'.$headerFooterJson["$lang"]["header"]["contactUs"].'</a>
             </li>
         </ul>
     </nav>

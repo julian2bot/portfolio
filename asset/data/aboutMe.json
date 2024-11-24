@@ -1,0 +1,31 @@
+{
+    
+  "fr": 
+    {
+      "title": "À propos de moi",
+      "underTitle": "Présentation",
+      "description": "Je suis Julian Marques, en 1ère année de BUT Informatique à l'IUT d'Orléans. Je suis passionné par le développement informatique ainsi que par le modélisme, avec plusieurs projets à mon actif !",
+      "description2": "Je suis guidé par ma curiosité, mon envie d'apprendre ainsi que par ma persévérance. Mon objectif est d'être diplômé en tant que développeur.",
+      "final": "N'hésitez pas à me contacter pour en savoir davantage !",
+      "age": "AGE",
+      "valeurAge": "18 ans",
+      "school": "ÉCOLE",
+      "schoolValue": "IUT ORLEANS",
+      "studie": "ÉTUDE",
+      "studieValue": "BUT INFO",
+      "cv": "cv"
+    }
+  
+  ,
+    
+    "en":[
+      {
+      "title": 1,
+      "description": 1,
+      "img": ",",
+      "altImg": 1
+    }
+  ]
+    
+    
+}

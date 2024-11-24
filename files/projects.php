@@ -45,7 +45,7 @@
                 <h1>Projets</h1>
                 <div class="card-container">
                 <?php
-                    foreach($projectsJson["fr"] as $projectSelected){
+                    foreach($projectsJson[$lang] as $projectSelected){
 
                         echo "
 

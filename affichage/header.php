@@ -1,33 +1,39 @@
-    
-<header id="main-header">
+<?php 
+
+include_once './../asset/utils/util.php';
+      
+$headerJson = getProducts("./../asset/data/recurante.json");
+
+echo '<header id="main-header">
     <!-- <div class="div">
-      <a href="../">
-        <img class="headerMoi" src="../asset/images/moi.png" alt="image dessin de moi" >
-      </a>
+        <a href="../">
+            <img class="headerMoi" src="../asset/images/moi.png" alt="image dessin de moi" >
+        </a>
     </div> -->
     <nav id="nav">
         <ul>
             <li>
-                <a href="./../files/aboutMe.php" class="nav-header"> À propos de moi</a>
+                <a href="./../files/aboutMe.php" class="nav-header">'.$headerJson["$lang"]["header"]["aboutMe"].'</a>
             </li> 
             <li>
                 <p>|</p>
             </li>
             <li>
-                <a href="./../files/skills.php" class="nav-header">Compétences</a>
+                <a href="./../files/skills.php" class="nav-header">'.$headerJson["$lang"]["header"]["skills"].'</a>
             </li>
             <li>
                 <p>|</p>
             </li>
             <li>
-                <a href="./../files/projects.php" class="nav-header">Projets</a>
+                <a href="./../files/projects.php" class="nav-header">'.$headerJson["$lang"]["header"]["project"].'</a>
             </li>
             <li>
                 <p>|</p>
             </li>
             <li>
-                <a href="./../files/contact.php" class="nav-header">Contact</a>
+                <a href="./../files/contact.php" class="nav-header">'.$headerJson["$lang"]["header"]["contactUs"].'</a>
             </li>
         </ul>
     </nav>
-</header>
+</header>';
+?>    

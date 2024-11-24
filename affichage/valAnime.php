@@ -1,5 +1,6 @@
 <?php
-$animation = 'Desactive';      
+$animation = 'Desactive';
+$lang = "fr";      
 // $animation = 'Active';
 
 // $animation = "b";

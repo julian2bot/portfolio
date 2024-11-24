@@ -49,7 +49,7 @@
                 <div class="card-container">
                     
                 <?php
-                    foreach($skillsJson["fr"] as $skillSelected){
+                    foreach($skillsJson[$lang] as $skillSelected){
 
                         echo "<div class='card'>
                             <img   src=".$skillSelected["img"]." alt='".$skillSelected["altImg"]."'>

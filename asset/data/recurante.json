@@ -1,0 +1,33 @@
+{
+    
+    "fr": 
+      {
+        
+        "header":{ 
+            "aboutMe": "À propos de moi",
+            "skills": "Compétences",
+            "project": "Projets",
+            "contactUs": "Contact"
+        },
+        "footer":{ 
+            "tel": "Téléphone",
+            "mail": "Email",
+            "credit": "PORTFOLIO SITE WEB © 2024"
+        }
+
+        
+      }
+    
+    ,
+      
+      "en":[
+        {
+        "title": 1,
+        "description": 1,
+        "img": ",",
+        "altImg": 1
+      }
+    ]
+      
+      
+  }

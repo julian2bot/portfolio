@@ -13,21 +13,35 @@
             "tel": "Téléphone",
             "mail": "Email",
             "credit": "PORTFOLIO SITE WEB © 2024"
-        }
+        },
+        "accueil":{ 
+          "subTitle": "Étudiant & Développeur"
+      }
 
         
       }
     
     ,
       
-      "en":[
-        {
-        "title": 1,
-        "description": 1,
-        "img": ",",
-        "altImg": 1
+      "en":{
+        
+          "header":{ 
+              "aboutMe": "About me",
+              "skills": "skills",
+              "project": "Projects",
+              "contactUs": "Contact"
+          },
+          "footer":{ 
+              "tel": "phone",
+              "mail": "mail",
+              "credit": "PORTFOLIO WEB SITE © 2024"
+          },
+          "accueil":{ 
+            "subTitle": "Studie & dev"
+        }
+
+        
       }
-    ]
       
       
   }

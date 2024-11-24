@@ -118,6 +118,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <body>
     <?php
           include __DIR__ . '/../affichage/lesAnimations.php';
+          
+          include './../asset/utils/util.php';
+      
+          $contactJson = getProducts("./../asset/data/contact.json");
+
+        //   echo "<pre>";
+        //   print_r($contactJson);
+        //   echo "</pre>";
+
+        //   echo $contactJson[$lang]["title"];
       ?> 
         
         <!-- <script src="../animation/script/animationSousPage.js"></script> -->
@@ -144,36 +154,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 ?>         
 
 
-                <h1>Contact</h1>            
+                <h1><?php echo $contactJson[$lang]["title"];?></h1>            
                 <div class="contact">
                     <form method="POST" class="form" action="">
                         <fieldset>
-                            <legend>Contact Me</legend>
+                            <legend><?php echo $contactJson[$lang]["legend"];?></legend>
                             <div class="form-input">
-                                <label for="Name">Nom & Prenom *</label>
+                                <label for="Name"><?php echo $contactJson[$lang]["champName"];?></label>
                                 <input type="text" name="Name" id="Name" placeholder=" " autocomplete="off" class="form-control-material" required="required"  />
                             </div>
                             <div class="form-input">
-                                <label for="email">Email *</label>
+                                <label for="email"><?php echo $contactJson[$lang]["champMail"];?></label>
                                 <input type="email" name="email" id="email" placeholder=" " autocomplete="off" class="form-control-material"  required="required" />
                             </div>
                             <div class="form-input">
-                                <label for="tel">N° telephone</label>
+                                <label for="tel"><?php echo $contactJson[$lang]["champNum"];?></label>
                                 <input type="tel" name="tel" id="tel" placeholder=" " autocomplete="off" class="form-control-material" />
                             </div>
                             <div class="form-input">
-                                <label for="sujet">Sujet *</label>
+                                <label for="sujet"><?php echo $contactJson[$lang]["champName"];?></label>
                                 <input type="text" name="sujet" id="sujet" placeholder=" " autocomplete="off" class="form-control-material" required="required"  />
                             </div>
                             <div class="form-input">
-                                <label for="message">Message * </label>
+                                <label for="message"><?php echo $contactJson[$lang]["champMsg"];?> </label>
                                 <textarea name="message" id="message"  required="required" ></textarea>
                             </div>
                             <button type="submit" class="btn">
-                                Envoyer
-                                <!-- <span></span>
-                                <span></span>
-                                <span></span> -->
+                                <?php echo $contactJson[$lang]["button"];?>
+
                             </button>
                         </fieldset>
                         <?php

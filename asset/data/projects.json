@@ -63,12 +63,64 @@
     
     "en":[
       {
-      "title": 1,
-      "descrition": 1,
-      "img": ",",
-      "altImg": 1
-    }
-  ]
+        "title": "Hand Traching Python",
+        "projectLink": "https://github.com/julian1bot/hand-tracking",
+        "description": "todo",
+        "img": "../asset/images/handtracking.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "Môm'tessori",
+        "projectLink": "#",
+        "description": "todo",
+        "img": "../asset/images/logoMomtessorie.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "Multi Game",
+        "projectLink": "https://github.com/julian1bot/Multi-Game",
+        "description": "todo",
+        "img": "../asset/images/multigame.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "IA Pacman",
+        "projectLink": "https://github.com/julian2bot/pacman",
+        "description": "todo",
+        "img": "../asset/images/fantD.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "Jeu en JavaScript",
+        "projectLink": "#",
+        "description": "todo",
+        "img": "../asset/images/JSJeuPerso.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "Arduino",
+        "projectLink": "#",
+        "description": "todo",
+        "img": "../asset/images/arduino.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "jeux olympiques IUT",
+        "projectLink": "https://github.com/chris-mathevet/Jeux-IUT-Olympiques",
+        "description": "todo",
+        "img": "../asset/images/medailleOr.png",
+        "altImg": "Logo de "
+      },
+      {
+        "title": "Figurine 3D",
+        "projectLink": "#",
+        "description": "todo",
+        "img": "../asset/images/piou.png",
+        "altImg": "Logo de "
+      }
+    
+    
+    ]
     
     
 }

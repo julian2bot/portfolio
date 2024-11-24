@@ -18,14 +18,19 @@
   
   ,
     
-    "en":[
-      {
-      "title": 1,
-      "description": 1,
-      "img": ",",
-      "altImg": 1
+    "en":{
+      "title": "about me",
+      "underTitle": "todo",
+      "description": "todo",
+      "description2": "todo",
+      "final": "todo",
+      "age": "year",
+      "valeurAge": "18 years",
+      "school": "SCHOOL",
+      "schoolValue": "IUT ORLEANS",
+      "studie": "Studie",
+      "studieValue": "BUT INFO",
+      "cv": "cv"
     }
-  ]
-    
     
 }

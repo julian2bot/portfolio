@@ -1,9 +1,9 @@
 <?php
 // $lang = $_COOKIE["lang"] ?? "fr";
-$animation = $_COOKIE["animation"] ?? 'Desactive';
+$animation = $_COOKIE["animation"] ?? 'Active';
 
 if(!isset($_COOKIE["animation"]) || empty($_COOKIE["animation"]))
-    setcookie("animation", "Desactive", time() + 3600 * 24 * 365, "/", null, false, false); // false = pas HttpOnly
+    setcookie("animation", "Active", time() + 3600 * 24 * 365, "/", null, false, false); // false = pas HttpOnly
 
 // $lang = "fr";      
 // $lang = "en";

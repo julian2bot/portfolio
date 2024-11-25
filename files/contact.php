@@ -172,7 +172,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <input type="tel" name="tel" id="tel" placeholder=" " autocomplete="off" class="form-control-material" />
                             </div>
                             <div class="form-input">
-                                <label for="sujet"><?php echo $contactJson[$lang]["champName"];?></label>
+                                <label for="sujet"><?php echo $contactJson[$lang]["champSuject"];?></label>
                                 <input type="text" name="sujet" id="sujet" placeholder=" " autocomplete="off" class="form-control-material" required="required"  />
                             </div>
                             <div class="form-input">

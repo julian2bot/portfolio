@@ -525,6 +525,16 @@ legend{
 	transition-duration: .2s;
     transform: translate(-.4rem, -.4rem);
 } 
+/* Bouton hover theme sombre (a revoir)  */
+/* .btn:hover {
+	color: white;
+	border-color: #000000;
+    background-color: rgb(169, 162, 188);
+
+    box-shadow: .3rem .3rem 0 #dfcdfb;
+	transition-duration: .2s;
+    transform: translate(-.4rem, -.4rem);
+}  */
 
 
 /* 

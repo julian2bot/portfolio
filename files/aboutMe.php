@@ -19,6 +19,9 @@
           include_once './../asset/utils/util.php';
       
           $aboutmeJson = getProducts("./../asset/data/aboutMe.json");
+        //   setcookie("lang", "en", time() + 3600 * 24 * 365, null, null, false, true); // doit etre fait au tout debut debut aucun code / html / espace etc
+        //   setcookie("lang", "en", time() + 3600 * 24 * 365, "/", null, false, true);
+
         // $lang = "fr";
       ?>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
@@ -103,7 +106,18 @@
                     
                     <img src="../asset/images/julian_fpv_.webp" alt="moi image">
                 </div>
-                         
+                <script>
+                        function getCookie(name) {
+                            const value = `; ${document.cookie}`;
+                            const parts = value.split(`; ${name}=`);
+                            if (parts.length === 2) return parts.pop().split(';').shift();
+                            return null;
+                        }
+                        const lang = getCookie('lang');
+                        console.log('Lang cookie:', lang);
+                    </script>
+
+
             </section>
         </main> 
         

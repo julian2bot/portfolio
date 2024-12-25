@@ -1,4 +1,6 @@
-
+<?php
+    include __DIR__ . '/../affichage/valAnime.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

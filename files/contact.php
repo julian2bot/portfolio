@@ -1,5 +1,5 @@
-
 <?php
+include __DIR__ . '/../affichage/valAnime.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 

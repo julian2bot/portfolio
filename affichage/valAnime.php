@@ -1,20 +1,37 @@
 <?php
-// $lang = $_COOKIE["lang"] ?? "fr";
+error_reporting(0);
+
+if (!isset($_COOKIE["lang"]) || empty($_COOKIE["lang"])) {
+    setcookie("lang", "fr", time() + 3600 * 24 * 365, "/", "", false, false); 
+}
+
+if (!isset($_COOKIE["animation"]) || empty($_COOKIE["animation"])) {
+    setcookie("animation", "Active", time() + 3600 * 24 * 365, "/", "", false, false); 
+}
+
+// Assurez-vous qu'aucune autre sortie ne se produit avant ces appels
+$lang = $_COOKIE["lang"] ?? "fr";
 $animation = $_COOKIE["animation"] ?? 'Active';
 
-if(!isset($_COOKIE["animation"]) || empty($_COOKIE["animation"]))
-    setcookie("animation", "Active", time() + 3600 * 24 * 365, "/", null, false, false); // false = pas HttpOnly
 
+
+// // $lang = $_COOKIE["lang"] ?? "fr";
+// ob_start() ;
+// if(!isset($_COOKIE["lang"]) || empty($_COOKIE["lang"]))
+//     setcookie("lang", "fr", time() + 3600 * 24 * 365, "/", "", false, false); // false = pas HttpOnly
+// if(!isset($_COOKIE["animation"]) || empty($_COOKIE["animation"]))
+//     setcookie("animation", "Active", time() + 3600 * 24 * 365, "/", "", false, false); // false = pas HttpOnly
+
+// $lang = $_COOKIE["lang"] ?? "fr";
+// $animation = $_COOKIE["animation"] ?? 'Active';
+
+// ob_end_flush();
 // $lang = "fr";      
 // $lang = "en";
 // if(!isset($_COOKIE["lang"]) || empty($_COOKIE["lang"]))
 // setcookie("lang", "en", time() + 3600 * 24 * 365, null, null, false, true); // doit etre fait au tout debut debut aucun code / html / espace etc
 // setcookie("lang", "en", time() + 3600 * 24 * 365, "/", null, false, true);
 
-
-$lang = $_COOKIE["lang"] ?? "fr";
-if(!isset($_COOKIE["lang"]) || empty($_COOKIE["lang"]))
-    setcookie("lang", "fr", time() + 3600 * 24 * 365, "/", null, false, false); // false = pas HttpOnly
 
 
 // $animation = 'Active';

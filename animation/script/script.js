@@ -20,10 +20,10 @@ function getCookie1() {
         var element_cookie = element.split('=');
         console.log(element_cookie, element_cookie[0], element_cookie[1]);
         
-
-        if(element_cookie){
+        if (element_cookie.length === 2) { // Assurez-vous qu'il y a à la fois une clé et une valeur
             object_cookie[element_cookie[0].trim()] = element_cookie[1].trim();
         }
+
     }
     
     return object_cookie;    

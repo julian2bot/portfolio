@@ -1,4 +1,6 @@
-
+<?php
+    include __DIR__ . '/affichage/valAnime.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -24,7 +26,7 @@
             //   if ($animation === 'Active') {
             //      include __DIR__ . '/affichage/animation.php';
             //   }
-            include __DIR__ . '/affichage/valAnime.php';
+            // include __DIR__ . '/affichage/valAnime.php';
             
             include __DIR__ . '/affichage/animation.php';
             

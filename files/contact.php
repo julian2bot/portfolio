@@ -9,7 +9,7 @@ require __DIR__ . '/../PHPMailer/src/PHPMailer.php';
 require __DIR__ . '/../PHPMailer/src/SMTP.php';
 
 function sendmail($nom, $email, $tel,$sujet, $message){
-    $mdp = fopen( __DIR__ . '/../app/pass/pass.csv', 'r');
+    $mdp = fopen( __DIR__ . '/../pass/pass.csv', 'r');
     
     if (!feof($mdp)) {
 

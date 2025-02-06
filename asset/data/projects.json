@@ -5,63 +5,70 @@
       "title": "Moteur graphique",
       "projectLink": "https://github.com/julian2bot/Moteur3D-python",
       "description": "Moteur 3D simplifié affiché en ASCII dans un terminal",
-      "img": "../asset/images/moi.png",
+      "img": "../asset/images/moteurGraphique.gif",
       "altImg": "Logo de "
     },
     {
       "title": "Concours Game Jam IUT Montpellier",
       "projectLink": "https://itch.io/jam/code-game-jam-2025/rate/3269344",
       "description": "Game Jam de 40h sur le thème \"Mélodie à l’infini\". Nous avons créé le jeu :  <br><b>Le chant du silence</b>",
-      "img": "../asset/images/moi.png",
+      "img": "../asset/images/gameJam.png",
       "altImg": "Logo de "
     },
     {
       "title": "Concours Nuit de l’Info",
       "projectLink": "https://github.com/julian2bot/nuit-de-l-info",
-      "description": "Création d’un site web en une nuit sur le sujet : <br><b>Et si l’océan était un corps humain ?</b>. 2eme dans le defis : <a href='https://www.nuitdelinfo.com/inscription/defis/468' style='color:grey;'>A la chasse au logo!<a>",
-      "img": "../asset/images/moi.png",
+      "description": "Création d’un site web en une nuit sur le sujet : <br><b> <a href='http://info24h.lescigales.org/' style='color:grey;'>Et si l’océan était un corps humain ?</a></b>. 2eme dans le defis : <a href='https://www.nuitdelinfo.com/inscription/defis/468' style='color:grey;'>A la chasse au logo!<a>",
+      "img": "../asset/images/nuitdelinfo.png",
       "altImg": "Logo de "
     },
     {
       "title": "Concours 24h de l’Info",
       "projectLink": "https://24hinfo.iut.fr/getting-started/",
       "description": "Participation aux 24H de l’info à l’IUT de Villetaneuse avec 3 défis :<br><b> Algorithmique, Web, Sécurité</b>",
-      "img": "../asset/images/moi.png",
+      "img": "../asset/images/24hdelinfo.png",
+      "altImg": "Logo de "
+    },
+    {
+      "title": "IUT Maisons Condorcet",
+      "projectLink": "../asset/pdf/Manuel_utilisateur.pdf",
+      "description": "Gestion des réservations pour un poney club : clients, moniteurs et administration du site",
+      "img": "../asset/images/Maisons_Condorcet.png",
       "altImg": "Logo de "
     },
     {
       "title": "IUT Réservation Poney Club",
       "projectLink": "https://github.com/julian2bot/SAE_Poney",
       "description": "Gestion des réservations pour un poney club : clients, moniteurs et administration du site",
-      "img": "../asset/images/moi.png",
+      "img": "../asset/images/saeponey.png",
       "altImg": "Logo de "
     },
     {
       "title": "IUT Gestion Restaurant",
       "projectLink": "#",
       "description": "Affichage et recherche de restaurants par filtres (En cours)",
-      "img": "../asset/images/moi.png",
+      "img": "../asset/images/saeRestaurant.png",
       "altImg": "Logo de "
     },
     {
       "title": "Jeu XXX",
       "projectLink": "#",
       "description": "Développement d’un jeu multijoueur from scratch avec Socket.io en JavaScript (Client/Serveur)",
-      "img": "../asset/images/moi.png",
+      "img": "../asset/images/jeuXXX.png",
       "altImg": "Logo de "
     },
     {
       "title": "IUT TP Note - Quiz en PHP",
       "projectLink": "https://github.com/chris-mathevet/S3-Web-Php-Note",
       "description": "TP noté avec utilisation de PHP et SQLite : gestion et réponse à des questionnaires",
-      "img": "../asset/images/moi.png",
+      "img": "../asset/images/quizzPhp.png",
       "altImg": "Logo de "
     },
     {
       "title": "IUT TP Note - Gestion de Livres en Python",
       "projectLink": "https://github.com/chris-mathevet/My-books",
       "description": "TP noté avec Flask (Python) et SQLite : gestion de livres et d’auteurs (ajout de commentaires et notes)",
-      "img": "../asset/images/moi.png",
+      "img": "../asset/images/myBook.png",
       "altImg": "Logo de "
     },
     {

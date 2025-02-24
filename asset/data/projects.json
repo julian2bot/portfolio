@@ -58,6 +58,20 @@
       "altImg": "Logo de "
     },
     {
+      "title": "CSS design",
+      "projectLink": "https://github.com/julian2bot/Css",
+      "description": "Projet entièrement réalisé en CSS pour me créer un beau fond d'écran ! Un paysage minimaliste, des animations, etc",
+      "img": "../asset/images/cssProjet.png",
+      "altImg": "Logo de mon site projet CSS "
+    },
+    {
+      "title": "CSS battle",
+      "projectLink": "https://cssbattle.dev/player/julian2bot",
+      "description": "L'objectif était d'apprendre à mieux manipuler le CSS, d'explorer de nouvelles approches et de comprendre différentes manières de concevoir un design. Un projet basé sur l'inspiration et la créativité",
+      "img": "../asset/images/CSSBattle2.png",
+      "altImg": "Logo de mon site projet css "
+    },
+    {
       "title": "IUT TP Note - Quiz en PHP",
       "projectLink": "https://github.com/chris-mathevet/S3-Web-Php-Note",
       "description": "TP noté avec utilisation de PHP et SQLite : gestion et réponse à des questionnaires",

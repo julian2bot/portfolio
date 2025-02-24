@@ -1,9 +1,18 @@
 {
     
-  "fr": [
+  "fr": [    
+    
+
+
+    {
+      "title": "C",
+      "description": "Apprentissage du langage C avec la bibliothèque SDL",
+      "img": "../asset/images/C_Logo.png",
+      "altImg": "Logo de C"
+    },
     {
       "title": "Python",
-      "description": "IA Pacman, gestion de données, gestion de serveur.",
+      "description": "IA Pacman, moteur graphique, gestion de données, gestion de serveur.",
       "img": "../asset/images/Python.png",
       "altImg": "Logo de Python"
     },
@@ -36,6 +45,35 @@
       "description": "Gestion des clients sur site internet, Bot Discord.js, développement de jeux vidéo.",
       "img": "../asset/images/javascript.png",
       "altImg": "Logo JavaScript"
+    },
+    {
+      "title": "Flutter",
+      "description": "Apprentissage de Flutter",
+      "img": "../asset/images/flutter.png",
+      "altImg": "Logo de flutter"
+    },
+    {
+      "title": "Flask",
+      "description": "Application Web de gestion de classes pour le collège Condorcet",
+      "img": "../asset/images/flask.png",
+      "altImg": "Logo de flask"
+    },
+    {
+      "title": "C#",
+      "description": "Apprentissage du langage C# pour la GameJam de Montpellier",
+      "img": "../asset/images/C_diese.png",
+      "altImg": "Logo de C#"
+    },    
+    {
+      "title": "Unity",
+      "description": "Code GameJam de Montpellier 2025",
+      "img": "../asset/images/unity.png",
+      "altImg": "Logo de unity"
+    },{
+      "title": "Figma",
+      "description": "Création de maquettes pour des sites web",
+      "img": "../asset/images/figma.png",
+      "altImg": "Logo de figma"
     },
     {
       "title": "Arduino",

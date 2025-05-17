@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/../affichage/valAnime.php';
+// include __DIR__ . '/../affichage/valAnime.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -119,6 +119,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <link rel="stylesheet" href="../style/style.css">  
         <link rel="stylesheet" href="../animation/style/animation.css">
     </head>
+        <?php
+            include __DIR__ . '/../affichage/valAnime.php';
+        ?>
     <body>
     <?php
           include __DIR__ . '/../affichage/lesAnimations.php';

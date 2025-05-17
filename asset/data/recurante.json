@@ -1,47 +1,34 @@
 {
-    
-    "fr": 
-      {
-        
-        "header":{ 
-            "aboutMe": "À propos de moi",
-            "skills": "Compétences",
-            "project": "Projets",
-            "contactUs": "Contact"
-        },
-        "footer":{ 
-            "tel": "Téléphone",
-            "mail": "Email",
-            "credit": "PORTFOLIO SITE WEB © 2024"
-        },
-        "accueil":{ 
-          "subTitle": "Étudiant & Développeur"
-      }
-
-        
-      }
-    
-    ,
-      
-      "en":{
-        
-          "header":{ 
-              "aboutMe": "About me",
-              "skills": "skills",
-              "project": "Projects",
-              "contactUs": "Contact"
-          },
-          "footer":{ 
-              "tel": "phone",
-              "mail": "mail",
-              "credit": "PORTFOLIO WEB SITE © 2024"
-          },
-          "accueil":{ 
-            "subTitle": "Studie & dev"
-        }
-
-        
-      }
-      
-      
+  "fr": {
+    "header": {
+      "aboutMe": "À propos de moi",
+      "skills": "Compétences",
+      "project": "Projets",
+      "contactUs": "Contact"
+    },
+    "footer": {
+      "tel": "Téléphone",
+      "mail": "Email",
+      "credit": "PORTFOLIO SITE WEB © 2024"
+    },
+    "accueil": {
+      "subTitle": "Étudiant & Développeur"
+    }
+  },
+  "en": {
+    "header": {
+      "aboutMe": "About me",
+      "skills": "skills",
+      "project": "Projects",
+      "contactUs": "Contact"
+    },
+    "footer": {
+      "tel": "Phone",
+      "mail": "Mail",
+      "credit": "PORTFOLIO WEB SITE © 2024"
+    },
+    "accueil": {
+      "subTitle": "Studie & dev"
+    }
   }
+}

@@ -1,36 +1,30 @@
 {
-    
-  "fr": 
-    {
-      "title": "À propos de moi",
-      "underTitle": "Présentation",
-      "description": "Je suis Julian Marques, en 2ème année de BUT Informatique à l'IUT d'Orléans. Je suis passionné par le développement informatique ainsi que par le modélisme, avec plusieurs projets à mon actif !",
-      "description2": "Je suis guidé par ma curiosité, mon envie d'apprendre ainsi que par ma persévérance. Mon objectif est d'être diplômé en tant que développeur.",
-      "final": "N'hésitez pas à me contacter pour en savoir davantage !",
-      "age": "ÂGE",
-      "valeurAge": "19 ans",
-      "school": "ÉCOLE",
-      "schoolValue": "IUT ORLEANS",
-      "studie": "ÉTUDE",
-      "studieValue": "BUT INFO",
-      "cv": "CV"
-    }
-  
-  ,
-    
-    "en":{
-      "title": "about me",
-      "underTitle": "todo",
-      "description": "todo",
-      "description2": "todo",
-      "final": "todo",
-      "age": "year",
-      "valeurAge": "19 years",
-      "school": "SCHOOL",
-      "schoolValue": "IUT ORLEANS",
-      "studie": "Studie",
-      "studieValue": "BUT INFO",
-      "cv": "cv"
-    }
-    
+  "fr": {
+    "title": "À propos de moi",
+    "underTitle": "Présentation",
+    "description": "Je suis Julian Marques, en 2ème année de BUT Informatique à l'IUT d'Orléans. Je suis passionné par le développement informatique ainsi que par le modélisme, avec plusieurs projets à mon actif !",
+    "description2": "Je suis guidé par ma curiosité, mon envie d'apprendre ainsi que par ma persévérance. Mon objectif est d'être diplômé en tant que développeur.<br><br>Afin de valider mon année, je suis actuellement en stage chez <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
+    "final": "N'hésitez pas à me contacter pour en savoir davantage !",
+    "age": "ÂGE",
+    "valeurAge": "19 ans",
+    "school": "ÉCOLE",
+    "schoolValue": "IUT ORLEANS",
+    "studie": "ÉTUDE",
+    "studieValue": "BUT INFO",
+    "cv": "CV"
+  },
+  "en": {
+    "title": "About Me",
+    "underTitle": "Introduction",
+    "description": "I'm Julian Marques, currently in my second year of a Bachelor's degree in Computer Science at IUT Orléans. I'm passionate about software development and model making, with several projects under my belt!",
+    "description2": "I'm driven by curiosity, a desire to learn, and perseverance. My goal is to graduate as a developer.<br><br>In order to complete my academic year, I am currently doing an internship at <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
+    "final": "Feel free to contact me to learn more!",
+    "age": "AGE",
+    "valeurAge": "19 years old",
+    "school": "SCHOOL",
+    "schoolValue": "IUT ORLÉANS",
+    "studie": "STUDIES",
+    "studieValue": "Bachelor in Computer Science",
+    "cv": "RESUME"
+  }
 }

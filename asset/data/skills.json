@@ -1,9 +1,5 @@
 {
-    
-  "fr": [    
-    
-
-
+  "fr": [
     {
       "title": "C",
       "description": "Apprentissage du langage C avec la bibliothèque SDL",
@@ -13,7 +9,7 @@
     {
       "title": "Python",
       "description": "IA Pacman, moteur graphique, gestion de données, gestion de serveur.",
-      "img": "../asset/images/Python.png",
+      "img": "../asset/images/python.png",
       "altImg": "Logo de Python"
     },
     {
@@ -41,6 +37,12 @@
       "altImg": "Logo de php"
     },
     {
+      "title": "Framework Jelix PHP",
+      "description": "Apprentissage de <a href='https://jelix.org/' style='color:grey;'>Jelix</a> durant mon stage chez <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
+      "img": "../asset/images/jelix3.png",
+      "altImg": "Logo de Jelix"
+    },
+    {
       "title": "JavaScript",
       "description": "Gestion des clients sur site internet, Bot Discord.js, développement de jeux vidéo.",
       "img": "../asset/images/javascript.png",
@@ -63,13 +65,14 @@
       "description": "Apprentissage du langage C# pour la GameJam de Montpellier",
       "img": "../asset/images/C_diese.png",
       "altImg": "Logo de C#"
-    },    
+    },
     {
       "title": "Unity",
       "description": "Code GameJam de Montpellier 2025",
       "img": "../asset/images/unity.png",
       "altImg": "Logo de unity"
-    },{
+    },
+    {
       "title": "Figma",
       "description": "Création de maquettes pour des sites web",
       "img": "../asset/images/figma.png",
@@ -105,76 +108,115 @@
       "img": "../asset/images/circuit-electrique.png",
       "altImg": "Logo schéma electrique"
     }
-  
   ],
-    
-    "en": [
-      {
-        "title": "Python",
-        "description": "Todo",
-        "img": "../asset/images/python.png",
-        "altImg": "Logo de Python"
-      },
-      {
-        "title": "HTML",
-        "description": "todo",
-        "img": "../asset/images/html.png",
-        "altImg": "Logo HTML"
-      },
-      {
-        "title": "Base de données",
-        "description": "todo",
-        "img": "../asset/images/base-de-donnees.png",
-        "altImg": "Logo Base de Données"
-      },
-      {
-        "title": "Css",
-        "description": "todo",
-        "img": "../asset/images/css.png",
-        "altImg": "Logo de CSS"
-      },
-      {
-        "title": "Php",
-        "description": "todo",
-        "img": "../asset/images/php.png",
-        "altImg": "Logo de php"
-      },
-      {
-        "title": "JavaScript",
-        "description": "todo",
-        "img": "../asset/images/javascript.png",
-        "altImg": "Logo JavaScript"
-      },
-      {
-        "title": "Arduino",
-        "description": "todo",
-        "img": "../asset/images/arduino.png",
-        "altImg": "Logo Arduino"
-      },
-      {
-        "title": "Java",
-        "description": "todo",
-        "img": "../asset/images/java.png",
-        "altImg": "Logo de Java"
-      },
-      {
-        "title": "SolidWorks / 3D",
-        "description": "todo",
-        "img": "../asset/images/solidworks.png",
-        "altImg": "Logo SolidWorks"
-      },
-      {
-        "title": "Modélisme",
-        "description": "todo",
-        "img": "../asset/images/solidworks.png",
-        "altImg": "Logo Modélisme"
-      },
-      {
-        "title": "Conception schéma electrique",
-        "description": "todo",
-        "img": "../asset/images/circuit-electrique.png",
-        "altImg": "Logo schéma electrique"
-      }
-    ]
-    
+  "en": [
+    {
+      "title": "C",
+      "description": "Learning the C language with the SDL library",
+      "img": "../asset/images/C_Logo.png",
+      "altImg": "C Logo"
+    },
+    {
+      "title": "Python",
+      "description": "Pacman AI, graphics engine, data handling, server management.",
+      "img": "../asset/images/python.png",
+      "altImg": "Python Logo"
+    },
+    {
+      "title": "HTML",
+      "description": "Showcase and dynamic websites.",
+      "img": "../asset/images/html.png",
+      "altImg": "HTML Logo"
+    },
+    {
+      "title": "Database",
+      "description": "Database management, communication with databases.",
+      "img": "../asset/images/base-de-donnees.png",
+      "altImg": "Database Logo"
+    },
+    {
+      "title": "CSS",
+      "description": "Page styling, page animations.",
+      "img": "../asset/images/css.png",
+      "altImg": "CSS Logo"
+    },
+    {
+      "title": "PHP",
+      "description": "Client-server handling, page simplification.",
+      "img": "../asset/images/php.png",
+      "altImg": "PHP Logo"
+    },
+    {
+      "title": "Jelix PHP Framework",
+      "description": "Learning <a href='https://jelix.org/' style='color:grey;'>Jelix</a> during my internship at <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
+      "img": "../asset/images/jelix3.png",
+      "altImg": "Jelix logo"
+    },
+    {
+      "title": "JavaScript",
+      "description": "Client-side handling for websites, Discord.js bot, video game development.",
+      "img": "../asset/images/javascript.png",
+      "altImg": "JavaScript Logo"
+    },
+    {
+      "title": "Flutter",
+      "description": "Learning Flutter",
+      "img": "../asset/images/flutter.png",
+      "altImg": "Flutter Logo"
+    },
+    {
+      "title": "Flask",
+      "description": "Web application for class management at Condorcet Middle School",
+      "img": "../asset/images/flask.png",
+      "altImg": "Flask Logo"
+    },
+    {
+      "title": "C#",
+      "description": "Learning C# for the Montpellier GameJam",
+      "img": "../asset/images/C_diese.png",
+      "altImg": "C# Logo"
+    },
+    {
+      "title": "Unity",
+      "description": "GameJam Montpellier 2025 project code",
+      "img": "../asset/images/unity.png",
+      "altImg": "Unity Logo"
+    },
+    {
+      "title": "Figma",
+      "description": "Creating mockups for websites",
+      "img": "../asset/images/figma.png",
+      "altImg": "Figma Logo"
+    },
+    {
+      "title": "Arduino",
+      "description": "Creating traffic lights, alarm robot, time management, hardware and software control.",
+      "img": "../asset/images/arduino.png",
+      "altImg": "Arduino Logo"
+    },
+    {
+      "title": "Java",
+      "description": "Front-end and back-end implementation of a software.",
+      "img": "../asset/images/java.png",
+      "altImg": "Java Logo"
+    },
+    {
+      "title": "SolidWorks / 3D",
+      "description": "Modeling and printing technical parts and figurines.",
+      "img": "../asset/images/solidworks.png",
+      "altImg": "SolidWorks Logo"
+    },
+    {
+      "title": "Model Making",
+      "description": "Repairing RC cars and FPV drones.",
+      "img": "../asset/images/solidworks.png",
+      "altImg": "Model Making Logo"
+    },
+    {
+      "title": "Electrical Diagram Design",
+      "description": "Creating and implementing electrical diagrams for various projects.",
+      "img": "../asset/images/circuit-electrique.png",
+      "altImg": "Electrical Diagram Logo"
+    }
+  ]
 }

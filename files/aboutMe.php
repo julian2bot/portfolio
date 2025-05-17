@@ -1,6 +1,4 @@
-<?php
-    include __DIR__ . '/../affichage/valAnime.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,6 +12,9 @@
         <link rel="stylesheet" href="../animation/style/animation.css">
 
     </head>
+    <?php
+            include __DIR__ . '/../affichage/valAnime.php';
+        ?>
     <body>
     <?php
           include __DIR__ . '/../affichage/lesAnimations.php';

@@ -1,6 +1,12 @@
 {
-    
   "fr": [
+    {
+      "title": "Prochainement - 24h de l'info 2025",
+      "projectLink": "https://24hinfo.iut.fr/",
+      "description": "Les 23 et 24 mai 2025 à Lyon, avec 3 défis : <br><b>Algorithmique, Web, Sécurité</b>",
+      "img": "../asset/images/lyon24hinfo.png",
+      "altImg": "Logo des 24h de l'info 2025"
+    },
     {
       "title": "Moteur graphique",
       "projectLink": "https://github.com/julian2bot/Moteur3D-python",
@@ -18,7 +24,7 @@
     {
       "title": "Concours Nuit de l’Info",
       "projectLink": "https://github.com/julian2bot/nuit-de-l-info",
-      "description": "Création d’un site web en une nuit sur le sujet : <br><b> <a href='http://info24h.lescigales.org/' style='color:grey;'>Et si l’océan était un corps humain ?</a></b>. 2eme dans le defis : <a href='https://www.nuitdelinfo.com/inscription/defis/468' style='color:grey;'>A la chasse au logo!<a>",
+      "description": "Création d’un site web en une nuit sur le sujet : <br><b> <a href='https://nuit-info2024.marquesjulian.fr' style='color:grey;'>Et si l’océan était un corps humain ?</a></b>. 2eme dans le defis : <a href='https://www.nuitdelinfo.com/inscription/defis/468' style='color:grey;'>A la chasse au logo!</a>",
       "img": "../asset/images/nuitdelinfo.png",
       "altImg": "Logo de "
     },
@@ -140,71 +146,169 @@
       "description": "Modélisation 3D d'un poussin dans le style d'une peluche.",
       "img": "../asset/images/piou.png",
       "altImg": "Logo de "
+    },
+    {
+      "title": "Jeux Phaser.io - JS",
+      "projectLink": "https://jeux-videos.marquesjulian.fr",
+      "description": "Jeux créés pour apprendre JavaScript et Phaser.io.",
+      "img": "../asset/images/dino.png",
+      "altImg": "Logo du dinosaure"
     }
-  
-  
   ],
-    
-    "en":[
-      {
-        "title": "Hand Traching Python",
-        "projectLink": "https://github.com/julian1bot/hand-tracking",
-        "description": "todo",
-        "img": "../asset/images/handtracking.png",
-        "altImg": "Logo de "
-      },
-      {
-        "title": "Môm'tessori",
-        "projectLink": "#",
-        "description": "todo",
-        "img": "../asset/images/logoMomtessorie.png",
-        "altImg": "Logo de "
-      },
-      {
-        "title": "Multi Game",
-        "projectLink": "https://github.com/julian1bot/Multi-Game",
-        "description": "todo",
-        "img": "../asset/images/multigame.png",
-        "altImg": "Logo de "
-      },
-      {
-        "title": "IA Pacman",
-        "projectLink": "https://github.com/julian2bot/pacman",
-        "description": "todo",
-        "img": "../asset/images/fantD.png",
-        "altImg": "Logo de "
-      },
-      {
-        "title": "Jeu en JavaScript",
-        "projectLink": "#",
-        "description": "todo",
-        "img": "../asset/images/JSJeuPerso.png",
-        "altImg": "Logo de "
-      },
-      {
-        "title": "Arduino",
-        "projectLink": "#",
-        "description": "todo",
-        "img": "../asset/images/arduino.png",
-        "altImg": "Logo de "
-      },
-      {
-        "title": "jeux olympiques IUT",
-        "projectLink": "https://github.com/chris-mathevet/Jeux-IUT-Olympiques",
-        "description": "todo",
-        "img": "../asset/images/medailleOr.png",
-        "altImg": "Logo de "
-      },
-      {
-        "title": "Figurine 3D",
-        "projectLink": "#",
-        "description": "todo",
-        "img": "../asset/images/piou.png",
-        "altImg": "Logo de "
-      }
-    
-    
-    ]
-    
-    
+  "en": [
+    {
+      "title": "Coming Soon - 24h de l'info 2025",
+      "projectLink": "https://24hinfo.iut.fr/",
+      "description": "May 23rd and 24th, 2025 in Lyon, featuring 3 challenges: <br><b>Algorithms, Web, Security</b>",
+      "img": "../asset/images/lyon24hinfo.png",
+      "altImg": "24h de l'info 2025 logo"
+    },
+    {
+      "title": "Graphics Engine",
+      "projectLink": "https://github.com/julian2bot/Moteur3D-python",
+      "description": "Simplified 3D engine displayed in ASCII in a terminal",
+      "img": "../asset/images/moteurGraphique.gif",
+      "altImg": "Graphics Engine Logo"
+    },
+    {
+      "title": "Game Jam - IUT Montpellier",
+      "projectLink": "https://itch.io/jam/code-game-jam-2025/rate/3269344",
+      "description": "40h Game Jam on the theme \"Melody to Infinity\". We created the game: <br><b>Le chant du silence</b>",
+      "img": "../asset/images/gameJam.png",
+      "altImg": "Game Jam Logo"
+    },
+    {
+      "title": "The Night of Code",
+      "projectLink": "https://github.com/julian2bot/nuit-de-l-info",
+      "description": "Website created in one night on the topic: <br><b> <a href='https://nuit-info2024.marquesjulian.fr' style='color:grey;'>What if the ocean were a human body?</a></b>. 2nd place in the challenge: <a href='https://www.nuitdelinfo.com/inscription/defis/468' style='color:grey;'>Hunting for the logo!</a>",
+      "img": "../asset/images/nuitdelinfo.png",
+      "altImg": "Nuit de l'Info Logo"
+    },
+    {
+      "title": "24-Hour Coding Challenge",
+      "projectLink": "https://24hinfo.iut.fr/getting-started/",
+      "description": "Participation at IUT Villetaneuse in 3 challenges: <br><b>Algorithms, Web, Security</b>",
+      "img": "../asset/images/24hdelinfo.png",
+      "altImg": "24H Info Logo"
+    },
+    {
+      "title": "IUT Condorcet Houses",
+      "projectLink": "../asset/pdf/Manuel_utilisateur.pdf",
+      "description": "Reservation management for a pony club: clients, instructors, and site administration",
+      "img": "../asset/images/Maisons_Condorcet.png",
+      "altImg": "Condorcet Project Logo"
+    },
+    {
+      "title": "IUT Pony Club Booking",
+      "projectLink": "https://github.com/julian2bot/SAE_Poney",
+      "description": "Reservation management for a pony club: clients, instructors, and site administration",
+      "img": "../asset/images/saeponey.png",
+      "altImg": "Pony Club Logo"
+    },
+    {
+      "title": "IUT Restaurant Management",
+      "projectLink": "#",
+      "description": "Display and filter-based search for restaurants (In progress)",
+      "img": "../asset/images/saeRestaurant.png",
+      "altImg": "Restaurant Project Logo"
+    },
+    {
+      "title": "Game XXX",
+      "projectLink": "#",
+      "description": "Multiplayer game developed from scratch with Socket.io in JavaScript (Client/Server)",
+      "img": "../asset/images/jeuXXX.png",
+      "altImg": "Game Project Logo"
+    },
+    {
+      "title": "CSS Design",
+      "projectLink": "https://github.com/julian2bot/Css",
+      "description": "Project fully made in CSS to create a beautiful wallpaper! A minimalist landscape, animations, etc.",
+      "img": "../asset/images/cssProjet.png",
+      "altImg": "CSS Project Logo"
+    },
+    {
+      "title": "CSS Battle",
+      "projectLink": "https://cssbattle.dev/player/julian2bot",
+      "description": "The goal was to improve CSS skills, explore new approaches and understand different ways to design. A project based on inspiration and creativity.",
+      "img": "../asset/images/CSSBattle2.png",
+      "altImg": "CSS Battle Logo"
+    },
+    {
+      "title": "IUT Graded Lab - PHP Quiz",
+      "projectLink": "https://github.com/chris-mathevet/S3-Web-Php-Note",
+      "description": "Graded lab using PHP and SQLite: manage and answer quizzes",
+      "img": "../asset/images/quizzPhp.png",
+      "altImg": "PHP Quiz Logo"
+    },
+    {
+      "title": "IUT Graded Lab - Book Management in Python",
+      "projectLink": "https://github.com/chris-mathevet/My-books",
+      "description": "Graded lab with Flask (Python) and SQLite: manage books and authors (add comments and ratings)",
+      "img": "../asset/images/myBook.png",
+      "altImg": "Python Books Logo"
+    },
+    {
+      "title": "Hand Tracking in Python",
+      "projectLink": "https://github.com/julian1bot/hand-tracking",
+      "description": "Python AI detecting hand movements and interacting with the computer based on them.",
+      "img": "../asset/images/handtracking.png",
+      "altImg": "Hand Tracking Logo"
+    },
+    {
+      "title": "Môm'tessori",
+      "projectLink": "#",
+      "description": "Website connected to a database, managing login/registration and user/admin roles.",
+      "img": "../asset/images/logoMomtessorie.png",
+      "altImg": "Môm'tessori Logo"
+    },
+    {
+      "title": "Multi Game",
+      "projectLink": "https://github.com/julian1bot/Multi-Game",
+      "description": "Mobile app with several mini-games (high school project).",
+      "img": "../asset/images/multigame.png",
+      "altImg": "Multi Game Logo"
+    },
+    {
+      "title": "Pacman AI",
+      "projectLink": "https://github.com/julian2bot/pacman",
+      "description": "AI for the Pacman game that automatically controls ghosts and Pacman for battles between them.",
+      "img": "../asset/images/fantD.png",
+      "altImg": "Pacman AI Logo"
+    },
+    {
+      "title": "JavaScript Game",
+      "projectLink": "#",
+      "description": "Game created during the 24-Hour Coding Challenge, character and map handling.",
+      "img": "../asset/images/JSJeuPerso.png",
+      "altImg": "JS Game Logo"
+    },
+    {
+      "title": "Arduino",
+      "projectLink": "#",
+      "description": "Various creations combining software and hardware.",
+      "img": "../asset/images/arduino.png",
+      "altImg": "Arduino Logo"
+    },
+    {
+      "title": "IUT Olympic Games",
+      "projectLink": "https://github.com/chris-mathevet/Jeux-IUT-Olympiques",
+      "description": "Software for managing Olympic Games: athletes, teams, events and results with a graphical interface.",
+      "img": "../asset/images/medailleOr.png",
+      "altImg": "Olympics Project Logo"
+    },
+    {
+      "title": "3D Figurine",
+      "projectLink": "#",
+      "description": "3D modeling of a chick designed as a plush toy.",
+      "img": "../asset/images/piou.png",
+      "altImg": "3D Chick Logo"
+    },
+    {
+      "title": "Phaser.io Games - JS",
+      "projectLink": "https://jeux-videos.marquesjulian.fr",
+      "description": "Games created to learn JavaScript and Phaser.io.",
+      "img": "../asset/images/dino.png",
+      "altImg": "Dino logo"
+    }
+  ]
 }

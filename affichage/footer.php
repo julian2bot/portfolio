@@ -17,6 +17,9 @@ echo '
             <a href="https://discordapp.com/users/361166463878561803" target="_blank">
                 <img src="../asset/images/discord.png" alt="Discord">
             </a>
+            <a href="https://fr.linkedin.com/in/marques-julian" style="margin-left:5px;" target="_blank">
+                <img src="../asset/images/linkedin.png" alt="Discord">
+            </a>
         </div>
         <div>
             <p>JULIAN MARQUES</p>

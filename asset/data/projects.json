@@ -1,7 +1,14 @@
 {
   "fr": [
     {
-      "title": "Prochainement - 24h de l'info 2025",
+      "title": "ApprendsSQL",
+      "projectLink": "https://apprendssql.marquesjulian.fr/",
+      "description": "<b> <a href='https://nuit-info2024.marquesjulian.fr' style='color:grey;'>ApprendsSQL</a></b> est un site qui permet de s’exercer au SQL via des sandbox, des exercices et un IDE intégré pour tester ses requêtes SQL",
+      "img": "../asset/images/apprendsSQL_small.png",
+      "altImg": "Logo ApprendsSQL, site pour apprendre le SQL"
+    },
+    {
+      "title": "24h de l'info 2025",
       "projectLink": "https://24hinfo.iut.fr/",
       "description": "Les 23 et 24 mai 2025 à Lyon, avec 3 défis : <br><b>Algorithmique, Web, Sécurité</b>",
       "img": "../asset/images/lyon24hinfo.png",
@@ -157,7 +164,14 @@
   ],
   "en": [
     {
-      "title": "Coming Soon - 24h de l'info 2025",
+      "title": "ApprendsSQL",
+      "projectLink": "https://apprendssql.marquesjulian.fr/",
+      "description": "<b><a href='https://nuit-info2024.marquesjulian.fr' style='color:grey;'>ApprendsSQL</a></b> is a website that allows users to practice SQL through sandboxes, exercises, and an integrated IDE to test their SQL queries.",
+      "img": "../asset/images/apprendsSQL_small.png",
+      "altImg": "ApprendsSQL logo, a website to learn SQL"
+    },
+    {
+      "title": "24h de l'info 2025",
       "projectLink": "https://24hinfo.iut.fr/",
       "description": "May 23rd and 24th, 2025 in Lyon, featuring 3 challenges: <br><b>Algorithms, Web, Security</b>",
       "img": "../asset/images/lyon24hinfo.png",

@@ -2,8 +2,8 @@
   "fr": {
     "title": "À propos de moi",
     "underTitle": "Présentation",
-    "description": "Je suis Julian Marques, en 2ème année de BUT Informatique à l'IUT d'Orléans. Je suis passionné par le développement informatique ainsi que par le modélisme, avec plusieurs projets à mon actif !",
-    "description2": "Je suis guidé par ma curiosité, mon envie d'apprendre ainsi que par ma persévérance. Mon objectif est d'être diplômé en tant que développeur.<br><br>Afin de valider mon année, je suis actuellement en stage chez <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
+    "description": "Je suis Julian Marques, en 3ème année de BUT Informatique à l'IUT d'Orléans. Je suis passionné par le développement informatique ainsi que par le modélisme, avec plusieurs projets à mon actif !",
+    "description2": "Je suis guidé par ma curiosité, mon envie d'apprendre ainsi que par ma persévérance. mon objectif est d'obtenir mon diplôme et de devenir développeur.<br><br>Afin de valider mon année, <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b> m'a proposé une alternance à la suite de mon stage. Je pourrai ainsi continuer à contribuer à leur évolution à travers un tout nouveau projet ambitieux.<br><br>En parallèle de mes études, je développe mon projet personnel <b><a href='https://apprendssql.marquesjulian.fr/' style='color:grey;'>ApprendsSQL</a></b>, un site permettant d'apprendre le SQL grâce à des exercices officiels ou créés par la communauté, le tout via un IDE intégré.",
     "final": "N'hésitez pas à me contacter pour en savoir davantage !",
     "age": "ÂGE",
     "valeurAge": "19 ans",
@@ -16,8 +16,8 @@
   "en": {
     "title": "About Me",
     "underTitle": "Introduction",
-    "description": "I'm Julian Marques, currently in my second year of a Bachelor's degree in Computer Science at IUT Orléans. I'm passionate about software development and model making, with several projects under my belt!",
-    "description2": "I'm driven by curiosity, a desire to learn, and perseverance. My goal is to graduate as a developer.<br><br>In order to complete my academic year, I am currently doing an internship at <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
+    "description": "I'm Julian Marques, currently in my third year of a Bachelor's degree in Computer Science at IUT Orléans. I'm passionate about software development and model making, with several projects to my name!",
+    "description2": "I'm driven by curiosity, a desire to learn, and perseverance. My goal is to graduate and become a developer.<br><br>To validate my academic year, <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b> offered me an apprenticeship following my internship. This opportunity allows me to continue contributing to their growth through an ambitious new project.<br><br>Alongside my studies, I am also developing my personal project <b><a href='https://apprendssql.marquesjulian.fr/' style='color:grey;'>ApprendsSQL</a></b>, a website that helps people learn SQL through official exercises or community-created challenges, all within an integrated IDE.",
     "final": "Feel free to contact me to learn more!",
     "age": "AGE",
     "valeurAge": "19 years old",

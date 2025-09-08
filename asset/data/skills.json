@@ -13,10 +13,16 @@
       "altImg": "Logo de Python"
     },
     {
-      "title": "HTML",
-      "description": "Sites internet vitrines et dynamiques.",
-      "img": "../asset/images/html.png",
-      "altImg": "Logo HTML"
+      "title": "Php",
+      "description": "Gestion serveur-client, simplification de pages.",
+      "img": "../asset/images/php.png",
+      "altImg": "Logo de php"
+    },
+    {
+      "title": "Laravel",
+      "description": "Apprentissage de <a href='https://laravel.com/' style='color:grey;'>Laravel</a> durant mon projet  <b><a href='https://apprendssql.marquesjulian.fr/' style='color:grey;'>ApprendsSQL</a></b>.",
+      "img": "../asset/images/Laravel.png",
+      "altImg": "Logo de Jelix"
     },
     {
       "title": "Base de données",
@@ -25,22 +31,16 @@
       "altImg": "Logo Base de Données"
     },
     {
+      "title": "HTML",
+      "description": "Sites internet vitrines et dynamiques.",
+      "img": "../asset/images/html.png",
+      "altImg": "Logo HTML"
+    },
+    {
       "title": "Css",
       "description": "Stylisation de pages, animations de pages.",
       "img": "../asset/images/css.png",
       "altImg": "Logo de CSS"
-    },
-    {
-      "title": "Php",
-      "description": "Gestion serveur-client, simplification de pages.",
-      "img": "../asset/images/php.png",
-      "altImg": "Logo de php"
-    },
-    {
-      "title": "Framework Jelix PHP",
-      "description": "Apprentissage de <a href='https://jelix.org/' style='color:grey;'>Jelix</a> durant mon stage chez <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
-      "img": "../asset/images/jelix3.png",
-      "altImg": "Logo de Jelix"
     },
     {
       "title": "JavaScript",
@@ -49,10 +49,10 @@
       "altImg": "Logo JavaScript"
     },
     {
-      "title": "Flutter",
-      "description": "Apprentissage de Flutter",
-      "img": "../asset/images/flutter.png",
-      "altImg": "Logo de flutter"
+      "title": "Framework Jelix PHP",
+      "description": "Apprentissage de <a href='https://jelix.org/' style='color:grey;'>Jelix</a> durant mon stage chez <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
+      "img": "../asset/images/jelix3.png",
+      "altImg": "Logo de Jelix"
     },
     {
       "title": "Flask",
@@ -71,6 +71,12 @@
       "description": "Code GameJam de Montpellier 2025",
       "img": "../asset/images/unity.png",
       "altImg": "Logo de unity"
+    },
+    {
+      "title": "Flutter",
+      "description": "Apprentissage de Flutter",
+      "img": "../asset/images/flutter.png",
+      "altImg": "Logo de flutter"
     },
     {
       "title": "Figma",
@@ -123,10 +129,16 @@
       "altImg": "Python Logo"
     },
     {
-      "title": "HTML",
-      "description": "Showcase and dynamic websites.",
-      "img": "../asset/images/html.png",
-      "altImg": "HTML Logo"
+      "title": "PHP",
+      "description": "Client-server handling, page simplification.",
+      "img": "../asset/images/php.png",
+      "altImg": "PHP Logo"
+    },
+    {
+      "title": "Laravel",
+      "description": "Learning <a href='https://laravel.com/' style='color:grey;'>Laravel</a> during my project <b><a href='https://apprendssql.marquesjulian.fr/' style='color:grey;'>ApprendsSQL</a></b>.",
+      "img": "../asset/images/Laravel.png",
+      "altImg": "Laravel logo"
     },
     {
       "title": "Database",
@@ -135,22 +147,16 @@
       "altImg": "Database Logo"
     },
     {
+      "title": "HTML",
+      "description": "Showcase and dynamic websites.",
+      "img": "../asset/images/html.png",
+      "altImg": "HTML Logo"
+    },
+    {
       "title": "CSS",
       "description": "Page styling, page animations.",
       "img": "../asset/images/css.png",
       "altImg": "CSS Logo"
-    },
-    {
-      "title": "PHP",
-      "description": "Client-server handling, page simplification.",
-      "img": "../asset/images/php.png",
-      "altImg": "PHP Logo"
-    },
-    {
-      "title": "Jelix PHP Framework",
-      "description": "Learning <a href='https://jelix.org/' style='color:grey;'>Jelix</a> during my internship at <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
-      "img": "../asset/images/jelix3.png",
-      "altImg": "Jelix logo"
     },
     {
       "title": "JavaScript",
@@ -159,10 +165,10 @@
       "altImg": "JavaScript Logo"
     },
     {
-      "title": "Flutter",
-      "description": "Learning Flutter",
-      "img": "../asset/images/flutter.png",
-      "altImg": "Flutter Logo"
+      "title": "Jelix PHP Framework",
+      "description": "Learning <a href='https://jelix.org/' style='color:grey;'>Jelix</a> during my internship at <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
+      "img": "../asset/images/jelix3.png",
+      "altImg": "Jelix logo"
     },
     {
       "title": "Flask",
@@ -181,6 +187,12 @@
       "description": "GameJam Montpellier 2025 project code",
       "img": "../asset/images/unity.png",
       "altImg": "Unity Logo"
+    },
+    {
+      "title": "Flutter",
+      "description": "Learning Flutter",
+      "img": "../asset/images/flutter.png",
+      "altImg": "Flutter Logo"
     },
     {
       "title": "Figma",

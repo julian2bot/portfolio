@@ -6,12 +6,12 @@ if (!isset($_COOKIE["lang"]) || empty($_COOKIE["lang"])) {
 }
 
 if (!isset($_COOKIE["animation"]) || empty($_COOKIE["animation"])) {
-    setcookie("animation", "Active", time() + 3600 * 24 * 365, "/", "", false, false); 
+    setcookie("animation", "Desactive", time() + 3600 * 24 * 365, "/", "", false, false); 
 }
 
 // Assurez-vous qu'aucune autre sortie ne se produit avant ces appels
 $lang = $_COOKIE["lang"] ?? "fr";
-$animation = $_COOKIE["animation"] ?? 'Active';
+$animation = $_COOKIE["animation"] ?? 'Desactive';
 
 
 

@@ -8,6 +8,13 @@
       "altImg": "Logo ApprendsSQL, site pour apprendre le SQL"
     },
     {
+      "title": "nuit de l'info 2025",
+      "projectLink": "https://nuit-info2025.marquesjulian.fr/",
+      "description": "La nuit du 4 au 5 décembre fut une nuit chargée en défis et en développement ! Nous avons créé un site sur le sujet proposé par <b><a style='color:grey;' href='https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf'>NIRD</a></b> et réalisé nos cinq défis.",
+      "img": "../asset/images/logo-n2i-2025.png",
+      "altImg": "Logo de la nuit de l'info 2025"
+    },
+    {
       "title": "24h de l'info 2025",
       "projectLink": "https://24hinfo.iut.fr/",
       "description": "Les 23 et 24 mai 2025 à Lyon, avec 3 défis : <br><b>Algorithmique, Web, Sécurité</b>",

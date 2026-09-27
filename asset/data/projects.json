@@ -1,9 +1,37 @@
 {
   "fr": [
-    {
+  {
+    "title": "Travail - Ellisphere",
+    "projectLink": "https://ellisphere.com/",
+    "description": "J'ai rejoint Ellisphere en tant que développeur web.",
+    "img": "../asset/images/ellisphere.png",
+    "altImg": "Logo Ellisphere"
+  },
+  {
+    "title": "Team - JS.remove()",
+    "projectLink": "https://jsremove.marquesjulian.fr/",
+    "description": "Pour centraliser toutes les informations sur notre équipe, j'ai créé un site web pour présenter l'équipe et les projets auxquels nous avons participé.",
+    "img": "../asset/images/js.remove().png",
+    "altImg": "Logo JS.remove()"
+  },
+  {
+    "title": "Travail - Elfea",
+    "projectLink": "https://elfea.com/",
+    "description": "Durant plus d'un an, j'ai travaillé chez <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b> en tant que développeur web. J'ai pu apprendre à gérer un projet et à développer mes compétences en programmation.",
+    "img": "../asset/images/elfea.png",
+    "altImg": "Logo Elfea, entreprise de gestion de salons industriels"
+  },
+  {
+    "title": "24h de l'info 2026",
+    "projectLink": "https://jsremove.marquesjulian.fr/#open?page=competitions&detail=24hinfo2026",
+    "description": "Dernière participation aux 24h de l'info, nous avons retrouvé les trois épreuves habituelles : <br><b>Web, algorithmique, sécurité</b>",
+    "img": "../asset/images/montpellier24hinfo.jpg",
+    "altImg": "Logo JS.remove(), 24h de l'info 2026"
+  },
+  {
       "title": "ApprendsSQL",
       "projectLink": "https://apprendssql.marquesjulian.fr/",
-      "description": "<b> <a href='https://nuit-info2024.marquesjulian.fr' style='color:grey;'>ApprendsSQL</a></b> est un site qui permet de s’exercer au SQL via des sandbox, des exercices et un IDE intégré pour tester ses requêtes SQL",
+      "description": "<b> <a href='https://apprendssql.marquesjulian.fr' style='color:grey;'>ApprendsSQL</a></b> est un site qui permet de s’exercer au SQL via des sandbox, des exercices et un IDE intégré pour tester ses requêtes SQL",
       "img": "../asset/images/apprendsSQL_small.png",
       "altImg": "Logo ApprendsSQL, site pour apprendre le SQL"
     },
@@ -171,9 +199,38 @@
   ],
   "en": [
     {
+      "title": "Work - Ellisphere",
+      "projectLink": "https://ellisphere.com/",
+      "description": "I joined Ellisphere as a web developer.",
+      "img": "../asset/images/ellisphere.png",
+      "altImg": "Ellisphere logo"
+    },
+    {
+      "title": "Team - JS.remove()",
+      "projectLink": "https://jsremove.marquesjulian.fr/",
+      "description": "To centralize all the information about our team, I created a website to showcase the team and the projects we have worked on.",
+      "img": "../asset/images/js.remove().png",
+      "altImg": "JS.remove() logo"
+    },
+    {
+      "title": "Work - Elfea",
+      "projectLink": "https://elfea.com/",
+      "description": "For over a year, I worked at <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b> as a web developer. I was able to learn how to manage a project and develop my programming skills.",
+      "img": "../asset/images/elfea.png",
+      "altImg": "Elfea logo, an industrial trade show management company"
+    },
+    {
+      "title": "24h de l'info 2026",
+      "projectLink": "https://jsremove.marquesjulian.fr/#open?page=competitions&detail=24hinfo2026",
+      "description": "Our latest participation in the 24h de l'info competition, where we took part in the three usual events: <br><b>Web, Algorithms, Cybersecurity</b>",
+      "img": "../asset/images/montpellier24hinfo.jpg",
+      "altImg": "JS.remove() logo, 24h de l'info 2026"
+    },
+
+    {
       "title": "ApprendsSQL",
       "projectLink": "https://apprendssql.marquesjulian.fr/",
-      "description": "<b><a href='https://nuit-info2024.marquesjulian.fr' style='color:grey;'>ApprendsSQL</a></b> is a website that allows users to practice SQL through sandboxes, exercises, and an integrated IDE to test their SQL queries.",
+      "description": "<b><a href='https://apprendssql.marquesjulian.fr' style='color:grey;'>ApprendsSQL</a></b> is a website that allows users to practice SQL through sandboxes, exercises, and an integrated IDE to test their SQL queries.",
       "img": "../asset/images/apprendsSQL_small.png",
       "altImg": "ApprendsSQL logo, a website to learn SQL"
     },

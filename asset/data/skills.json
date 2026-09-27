@@ -20,9 +20,9 @@
     },
     {
       "title": "Laravel",
-      "description": "Apprentissage de <a href='https://laravel.com/' style='color:grey;'>Laravel</a> durant mon projet  <b><a href='https://apprendssql.marquesjulian.fr/' style='color:grey;'>ApprendsSQL</a></b>.",
+      "description": "Apprentissage de <a href='https://laravel.com/' style='color:grey;'>Laravel</a> durant mon projet  <b><a href='https://apprendssql.marquesjulian.fr/' style='color:grey;'>ApprendsSQL</a> </b> et autres projets web.",
       "img": "../asset/images/Laravel.png",
-      "altImg": "Logo de Jelix"
+      "altImg": "Logo de Laravel"
     },
     {
       "title": "Base de données",
@@ -53,6 +53,12 @@
       "description": "Apprentissage de <a href='https://jelix.org/' style='color:grey;'>Jelix</a> durant mon stage chez <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
       "img": "../asset/images/jelix3.png",
       "altImg": "Logo de Jelix"
+    },
+    {
+      "title": "Bash",
+      "description": "Installation et configuration de serveur Linux, et création de scripts pour l'automatisation.",
+      "img": "../asset/images/bash.png",
+      "altImg": "Logo de Bash"
     },
     {
       "title": "Flask",
@@ -136,7 +142,7 @@
     },
     {
       "title": "Laravel",
-      "description": "Learning <a href='https://laravel.com/' style='color:grey;'>Laravel</a> during my project <b><a href='https://apprendssql.marquesjulian.fr/' style='color:grey;'>ApprendsSQL</a></b>.",
+      "description": "Learning <a href='https://laravel.com/' style='color:grey;'>Laravel</a> during my project <b><a href='https://apprendssql.marquesjulian.fr/' style='color:grey;'>ApprendsSQL</a></b> and other web projects.",
       "img": "../asset/images/Laravel.png",
       "altImg": "Laravel logo"
     },
@@ -169,6 +175,12 @@
       "description": "Learning <a href='https://jelix.org/' style='color:grey;'>Jelix</a> during my internship at <b><a href='https://www.elfea.com/accueil' style='color:grey;'>Elfea</a></b>.",
       "img": "../asset/images/jelix3.png",
       "altImg": "Jelix logo"
+    },
+    {
+      "title": "Bash",
+      "description": "Installation and configuration of a Linux server, creation of scripts for automation.",
+      "img": "../asset/images/bash.png",
+      "altImg": "Bash Logo"
     },
     {
       "title": "Flask",
